@@ -1,0 +1,32 @@
+\begin{EnAbstract}
+
+\vspace*{1cm}
+% Since the development of \textbf{computational imaging}, the number of medical images have increased dramatically, including \textbf{whole slide imaging (WSI)} which is a technique creating digital slides of microscopic tissue images. These images are evaluated by pathologists to provide further assessments. Because of the explosion of the amount of generated images, \textbf{computer-aided diagnosis (CADx)} systems have been built to automatically transform these data to useful information, shorten the amount of analyzing time spent by professionals.
+
+Since the development of \textbf{computational imaging}, the number of medical images have increased dramatically, occupying a lot of time of pathologists to provide further assessments. Therefore, \textbf{computer-aided diagnosis (CADx)} systems have been built to automatically transform these data to useful information, shorten the amount of analyzing time spent by professionals. 
+
+\textbf{Abnormal detection} and \textbf{segmentation} are considered as two of the main tasks to build up a CADx system. While the former focuses on designing and implementing a method that has an ability to detect different diseases symptoms, abnormal signals and anatomical landmarks, the latter, for example in the microscopic tissue images, identifies regions belonging the cell nucleus and extracts nuclear morphometric, pleomorphism or appearance features including average size or density.
+
+% \textbf{Segmentation}, for example in the microscopic tissue images, identifies regions belonging the cell nucleus and extracts nuclear morphometric, pleomorphism or appearance features including average size, density, etc. It is considered as one of the main tasks to build a CADx system. Before the deep learning era, the algorithms are mostly built upon the handcrafted features designed by human experts. These features are not discriminate enough in the high-dimensional space, leading to failure in real-life scenarios. 
+
+Inspired by recent advances in deep learning, such as \textbf{Faster R-CNN} and the\textbf{ U-Net} architecture, the authors propose new enhancements to tackle problems appearing in medical image analysis, especially abnormal detection and nuclear segmentation. 
+
+In more details, new novel \textbf{data augmentation} has been designed and adapted to corresponding domains. Moreover, in abnormal detection, the combination of \textbf{Residual Neural Network} and \textbf{Faster R-CNN} are applied to classify endoscopic images, while the \textbf{rotation equivariance} and \textbf{residual blocks} have been cooperated to the U-Net architecture to improve performance of nuclear segmentation task. 
+
+\pagebreak
+Through conducted experiments, ablation studies, as well as the results from challenges, the merit of each enhancement has been demonstrated, showing the effectiveness of each proposed method. In Medico: The 2018 Multimedia for Medicine Task of MediaEval 2018, our detection methods achieve the best performance not only in term of the accuracy but also in the inference time, which are 94.24\% and 99.33\% in term of Matthew Correlation Coefficient.
+
+A subset of proposed enhancements in nuclear segmentation also ranks $11^{th}/32$ with 65.57\% on AJI in the MoNuSeg Challenge 2018. These results show the great potential of deep learning applications in medical image processing.
+
+
+% As the results conducted on a separated test set from training data of MoNuSeg Challenge 2018, the combination of proposed enhancements reach 62.91\% on Aggregated Jaccard Index (AJI).  Part of these enhancements including data augmentation and additive residual blocks have been used in the MoNuSeg Challenge 2018, which ranked $11^{th}/32$ with 65.57\% on AJI.
+
+% Inspired from the fact that recent achievements in computer vision, image processing and deep learning can encourage multimedia communities together with computer scientists to involve in improving the health-care system and establish the next level of computer and multimedia assisted diagnosis system. Such system can reduce not only the average cost and time for patients but also their discomfort and increase  the  willingness to undertake the examination. 
+
+% In this thesis, we focus on improving an abnormalities findings and anatomy landmark detection system that that can work on endoscopic images of human gastrointestinal tract. Given a set of data collected in hospitals, we need to design and implement a classifier that has an ability to detect up to  16 different diseases symptoms, abnormal signals and anatomical landmarks. Besides high accuracy, the system is also required to minimize the processing time and use as less as training data as possible. 
+
+% In our work, we proposed a stacked deep neural network models that is a combination of Residual Neural Network and Faster R - CNN model to classify endoscopic images. Advantages of both image classification model and object detection model are utilize to enhance the overall performance of our system. During the training process, data augmentation strategies are applied in order to overcome the limitation of training samples, which is one of the common challenges in medical dataset domain.
+
+% Our approaches are evaluated by Medico: The 2018 Multimedia for Medicine Task. The HCMUS Team's submits multiple runs with different modifications of the parameters in our combined model. Through out the challenge, our methods archive the best performance not only in term of the accuracy but also in the inference time. From the official results, the highest Matthew Correlation Coefficient of our submissions up to 94.24\% and 99.33\% in term of the accuracy.  
+
+\end{EnAbstract}

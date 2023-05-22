@@ -609,11 +609,11 @@
 
 UNIVERSITY OF SCIENCE\\
 FACULTY OF INFORMATION TECHNOLOGY\\
-HONORS PROGRAM\\
+ADVANCED PROGRAM IN COMPUTER SCIENCE\\
 \vspace*{50pt}
 
 \fontsize{14pt}{16pt}\selectfont
-\MakeTextUppercase{Hoàng Trung Hiếu - Tôn Thất Vĩnh}
+\MakeTextUppercase{Huỳnh Lâm Hải Đăng - Hồ Thị Ngọc Phượng}
 
 \vspace*{60pt}
 \begingroup
@@ -647,7 +647,7 @@ HO CHI MINH CITY, \@submityear\par
 \fontsize{14pt}{16pt}\selectfont%
 UNIVERSITY OF SCIENCE\\
 FACULTY OF INFORMATION TECHNOLOGY\\
-HONORS PROGRAM\\
+ADVANCED PROGRAM IN COMPUTER SCIENCE\\
 \endgroup
 
 \vspace*{50pt}
@@ -684,7 +684,7 @@ THESIS ADVISORS:\\
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont
-HO CHI MINH CITY, 2019
+HO CHI MINH CITY, 2023
 \endgroup
 
 \newpage

@@ -1,62 +1,72 @@
 \chapter{Thesis Proposal}
 \begin{longtable}{|l|c|}
 \hline
-\multicolumn{2}{|m{\linewidth}|}{\textbf{Thesis title}: MEDICAL IMAGE SEGMENTATION AND DIAGNOSIS
+\multicolumn{2}{|m{\linewidth}|}{\textbf{Thesis title}: ENHANCING VIDEO SUMMARIZATION WITH CONTEXT AWARENESS
 }\\
 \hline
-\multicolumn{2}{|m{\linewidth}|}{\textbf{Advisors}: Assoc.Prof. Trần Minh Triết, Prof. Đỗ Ngọc Minh} \\
+\multicolumn{2}{|m{\linewidth}|}{\textbf{Advisors}: Assoc.Prof. Trần Minh Triết, Dr. Lê Trung Nghĩa} \\
 \hline
-\multicolumn{2}{|m{\linewidth}|}{\textbf{Duration}: January 2\textsuperscript{nd}, 2019 to June 30\textsuperscript{th}, 2019}\\
+\multicolumn{2}{|m{\linewidth}|}{\textbf{Duration}: January 1\textsuperscript{st}, 2023 to August 14\textsuperscript{th}, 2023}\\
 \hline
-\multicolumn{2}{|m{\linewidth}|}{\textbf{Students}: Hoàng Trung Hiếu (1512159) - Tôn Thất Vĩnh (1512679)}\\
+\multicolumn{2}{|m{\linewidth}|}{\textbf{Students}: Huỳnh Lâm Hải Đăng (19125003) - Hồ Thị Ngọc Phượng (19125014)}\\
 \hline
 \multicolumn{2}{|m{\linewidth}|}{\textbf{Theme of Thesis}: theoretical research, proposed improvements.}\\
 \hline
 \multicolumn{2}{|m{\linewidth}|}{\textbf{Content}:\par
-The objective of this thesis is to propose novel methods to improve the performance for two problems in medical image analysis, including abnormalities finding/anatomy landmark detection on endoscopic images and H\&E stained histopathology image segmentation.\par
+We aim to propose a novel approach for improving video summarization quality by integrating context awareness. We also aim to propose an evaluation metric that better suits the practical use of problem in real life.\par
 The details include:
 \begin{itemize}
-\item Conduct researches on different abnormalities detection on medical image, from handcrafted approaches to deep learning approaches. 
-
-\item Conduct researches on different deep neural networks architecture for image classification and object detection tasks in Computer Vision.
-
-\item Conduct researches on enhancing the performance of deep learning models with data augmentation mechanisms.
-
-\item Conduct experiments of proposed enhancements on endoscopic images and evaluate the results based on main score: Accuracy (ACC) and Matthews Correlation Coefficient (MCC).
-
+  \item Literature Review and Proposal Writing \begin{itemize}
+    \item Conduct a comprehensive literature review on video summarization, identifying the current state-of-the-art techniques and their limitations, as well as opportunities for improvement. 
+    \item Analyze the importance of context in video summarization and compare existing methods and tools for context extraction in videos, in terms of performance and applicability for video summarization.
+    \item Develop a research proposal, including research questions, hypothesis, and methodology, based on the findings from the literature review.
+  \end{itemize}
 \end{itemize}}\\
 \hline
+
 \multicolumn{2}{|m{\linewidth}|}{\begin{itemize}
-
-\item Conduct researches on different nuclear segmentation not only on H\&E images but also in other related domains. 
-
-\item Conduct researches on enforcing rotation equivariance in the network, especially in convolutional neural networks.
-
-\item Conduct researches on some semantic segmentation methods, especially instance segmentation.
-
-\item Conduct experiments on proposed enhancements with thoroughly designed ablation study and evaluate the results based on main score: Aggregated Jaccard Index.
-
+  \item Dataset Collection \begin{itemize}
+    \item Collect datasets suitable for training and testing.
+    \item Analyze the current evaluation metrics for video summarization and identify their flaws.
+    \item Define relevant performance metrics for evaluating the effectiveness of the context awareness in improving the quality of video summarization.
+  \end{itemize}
+  \item Model Development\begin{itemize}
+    \item Develop baseline model for the sake of benchmarking.
+    \item Develop different models to prove the proposed hypothesis.
+    \item Train and optimize the model using the collected datasets.
+  \end{itemize}
+  \item Comparison with Existing Video Summarization Techniques\begin{itemize}
+    \item Conduct experiments on proposed enhancements with a thoroughly designed ablation study.
+    \item Analyze the strengths and weaknesses of the proposed approach.
+    \item Conduct surveys based on the proposed evaluation metric.
+  \end{itemize}
+  \item Demo Application Development\begin{itemize}
+    \item Develop a demo application that can demonstrate the functionality and usability of the proposed framework for video summarization.
+  \end{itemize}
 \end{itemize}}\\
+\hline
+
+\multicolumn{2}{|m{\linewidth}}{\begin{itemize}
+  \item Thesis Writing and Submission\begin{itemize}
+    \item Write up the thesis, including an introduction, literature review, methodology, results, discussion, and conclusion.
+    \item Submit the thesis for review and evaluation by the thesis committee.
+  \end{itemize}
+\end{itemize}}\\
+
 \multicolumn{2}{|m{\linewidth}|}{
 \textbf{Implementation plan}:
 \begin{itemize}
-\item 02/01/2019-15/01/2019: Literature review about abnormal findings and anatomical landmark detection; nuclear cell segmentation, group-equivariant neural network and related problems.
-\item 16/01/2019-01/02/2019: Undertake research on image classification, object detection, instance segmentation methods and challenges in Computer Vision, especially on medical dataset domains.
-\item 01/02/2019-15/02/2019: Conduct research about related works on deep-learning based approaches in abnormal findings and anatomical land mark detection; nuclear segmentation.
-\item 15/02/2019-28/02/2019: Undertake research on Faster R-CNN, Residual Neural Network, U-Net architectures and related problems.
+  \item Literature Review and Proposal Writing: 01-01-2023 to 31-01-2023
+  \item Dataset Collection: 01-02-2023 to 15-02-2023
+  \item Saliency Detection Model Development: 16-02-2023 to 15-03-2023
+  \item Video Summarization Model Development: 16-03-2023 to 15-04-2023
+  \item Integration of Saliency Detection into Video Summarization: 16-04-2023 to 15-05-2023
+  \item Comparison with Existing Video Summarization Techniques: 16-05-2023 to 31-05-2023
+  \item Demo Application Development: 01-06-2023 to 30-06-2023
+  \item Thesis Writing and Submission: 01-07-2023 to 31-07-2023
 \end{itemize}}\\
 \hline
-\multicolumn{2}{|m{\linewidth}|}{
-\begin{itemize}
-\item 01/03/2019-18/03/2019: Implement an image classification with residual neural network on endoscopic images and enhancement of the long-skip connections in the U-Net with residual blocks.
-\item 19/03/2019-15/04/2019: Enhance the training samples with specifically designed data augmentation mechanism for gastrointestinal endoscopic and histological images.
-\item 16/04/2019-13/05/2019: Implement an object detection with Faster-R-CNN for abnormal symptoms localization and encode equivariance to groups, specifically rotation and translation, into U-Net architecture.
-\item 14/05/2019-15/06/2019: Evaluate the implementations of proposed methods, and make adjustments if necessary.
-\item 16/06/2019-30/06/2019: Thesis finalization.
-\end{itemize}}\\
-\hline
-\makecell{\textbf{Advisors} \vspace*{3cm} Trần Minh Triết \hspace{10pt}  Đỗ Ngọc Minh} & \makecell{\textbf{December 26\textsuperscript{th} 2018}\\ \textbf{Authors} \vspace*{2cm} \\Hoàng Trung Hiếu \hspace{10pt} Tôn Thất Vĩnh}\\
+\makecell{\\ \textbf{Advisors} \vspace*{2cm} \\ Assoc. Prof. Trần Minh Triết \vspace*{2cm} \\ Dr. Lê Trung Nghĩa} & \makecell{\textbf{December 26\textsuperscript{th} 2022}\\ \textbf{Authors} \vspace*{2cm} \\ Huỳnh Lâm Hải Đăng \vspace*{2cm} \\ Hồ Thị Ngọc Phượng}\\
 \hline
 \end{longtable}
-
 

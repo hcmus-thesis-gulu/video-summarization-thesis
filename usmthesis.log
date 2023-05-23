@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.22)  22 MAY 2023 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.22)  23 MAY 2023 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,10 +828,11 @@ Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environ
 \c@algorithm=\count364
 )
 \@auxoutown=\write3
- (./own.aux)
+
+No file own.aux.
 \openout3 = `own.aux'.
 
- (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
  (/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -1193,7 +1194,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 LaTeX Warning: Unused global option(s):
     [singlespacetitle].
 
-(./usmthesis.aux (./advisor-comment.aux) (./reviewer-comment.aux) (./acknowledgements.aux) (./syllabus.aux) (./chap-experiment-endoscopy.aux) (./chap-experiment.aux))
+No file usmthesis.aux.
 \openout1 = `usmthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
@@ -1216,7 +1217,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
 LaTeX Font Info:    ... okay on input line 183.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
 LaTeX Font Info:    ... okay on input line 183.
- (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count405
 \scratchdimen=\dimen340
@@ -1428,310 +1429,41 @@ Overfull \hbox (12.79999pt too wide) in alignment at lines 2--71
 
 
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7]) [8] (./usmthesis.toc [9
-
-
-
-
-])
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7]) [8] (./usmthesis.toc)
 \tf@toc=\write6
 \openout6 = `usmthesis.toc'.
 
- [10] (./usmthesis.lot)
+ [9
+
+
+
+
+] (./usmthesis.lot)
 \tf@lot=\write7
 \openout7 = `usmthesis.lot'.
+
+ [10
+
+
+
+] (./usmthesis.lof)
+\tf@lof=\write8
+\openout8 = `usmthesis.lof'.
 
  [11
 
 
 
-] (./usmthesis.lof
-Underfull \hbox (badness 2142) in paragraph at lines 3--3
-[]|\T5/cmr/m/n/13 Classes of the Medico: The 2018 Mul-ti-me-dia for
- []
-
-
-Underfull \hbox (badness 1348) detected at line 3
-[]|\T5/cmr/m/n/13 Classes of the Medico: The 2018 Mul-ti-me-dia for
- []
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page xii undefined on input line 9.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page xii undefined on input line 10.
-
-[12
+] (./abs-eng.tex [12
 
 
 
-]
-Underfull \hbox (badness 2884) in paragraph at lines 12--12
-[]|\T5/cmr/m/n/13 The U-Net re-sults and their cor-re-spond-ing post-
- []
+]) [13] (./mainchaps.tex
+\openout2 = `chapter:literature-review.aux'.
 
+
+No file chapter:literature-review.tex.
 )
-\tf@lof=\write8
-\openout8 = `usmthesis.lof'.
-
- [13] (./abs-eng.tex [14
-
-
-
-]) [15] (./mainchaps.tex
-\openout2 = `chap-experiment-endoscopy.aux'.
-
- (./chap-experiment-endoscopy.tex
-Chapter 1.
-[1
-
-
-
-
-
-]
-<endoscopy_resources/vis_16_classes.png, id=250, 1083.04625pt x 638.385pt>
-File: endoscopy_resources/vis_16_classes.png Graphic file (type png)
-<use endoscopy_resources/vis_16_classes.png>
-Package pdftex.def Info: endoscopy_resources/vis_16_classes.png  used on input line 20.
-(pdftex.def)             Requested size: 441.01773pt x 259.9472pt.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-[]\T5/cmr/m/n/13 dyed-resection-
- []
-
-[3 <./endoscopy_resources/vis_16_classes.png>]
-
-Package natbib Warning: Citation `MATTHEWS1975442' on page 4 undefined on input line 56.
-
-[4]
-
-Package natbib Warning: Citation `chen17implementation' on page 5 undefined on input line 74.
-
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 74.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 74.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 74.
-
-LaTeX Font Info:    Trying to load font information for T5+lmtt on input line 74.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t5lmtt.fd
-File: t5lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[][][][][]$\T5/lmtt/m/n/10.83347 github . com / tensorflow / models / tree / master / research / slimơ #
- []
-
-[5]
-
-Package natbib Warning: Citation `DBLP:journals/corr/KingmaB14' on page 6 undefined on input line 79.
-
-[6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-t5.enc}]
-<endoscopy_resources/res_frcnn_instr.png, id=304, 1231.60126pt x 339.2675pt>
-File: endoscopy_resources/res_frcnn_instr.png Graphic file (type png)
-<use endoscopy_resources/res_frcnn_instr.png>
-Package pdftex.def Info: endoscopy_resources/res_frcnn_instr.png  used on input line 90.
-(pdftex.def)             Requested size: 441.01773pt x 121.48392pt.
-<endoscopy_resources/res_frcnn_dyed_lifted_polyps.png, id=305, 1230.5975pt x 353.32pt>
-File: endoscopy_resources/res_frcnn_dyed_lifted_polyps.png Graphic file (type png)
-<use endoscopy_resources/res_frcnn_dyed_lifted_polyps.png>
-Package pdftex.def Info: endoscopy_resources/res_frcnn_dyed_lifted_polyps.png  used on input line 98.
-(pdftex.def)             Requested size: 441.01773pt x 126.61824pt.
- [7 <./endoscopy_resources/res_frcnn_instr.png>] [8 <./endoscopy_resources/res_frcnn_dyed_lifted_polyps.png>]
-<endoscopy_resources/confusing_cases.png, id=319, 598.235pt x 533.995pt>
-File: endoscopy_resources/confusing_cases.png Graphic file (type png)
-<use endoscopy_resources/confusing_cases.png>
-Package pdftex.def Info: endoscopy_resources/confusing_cases.png  used on input line 116.
-(pdftex.def)             Requested size: 352.81552pt x 314.9321pt.
- [9 <./endoscopy_resources/confusing_cases.png>]
-<endoscopy_resources/mediaeval_cfm_run3.png, id=326, 361.35pt x 326.05815pt>
-File: endoscopy_resources/mediaeval_cfm_run3.png Graphic file (type png)
-<use endoscopy_resources/mediaeval_cfm_run3.png>
-Package pdftex.def Info: endoscopy_resources/mediaeval_cfm_run3.png  used on input line 130.
-(pdftex.def)             Requested size: 352.81552pt x 318.36064pt.
-LaTeX Font Info:    Calculating math sizes for size <11.86258> on input line 153.
- [10 <./endoscopy_resources/mediaeval_cfm_run3.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 156.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--174
-[][]
- []
-
-[11]) [12]
-\openout2 = `chap-experiment.aux'.
-
- (./chap-experiment.tex
-Chapter 2.
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 13 undefined on input line 12.
-
-[13
-
-
-
-
-
-]
-<resources/5_H_E_examples.png, id=345, 860.21375pt x 436.63126pt>
-File: resources/5_H_E_examples.png Graphic file (type png)
-<use resources/5_H_E_examples.png>
-Package pdftex.def Info: resources/5_H_E_examples.png  used on input line 18.
-(pdftex.def)             Requested size: 441.01773pt x 223.85825pt.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 14 undefined on input line 24.
-
-
-LaTeX Warning: Reference `chap-method' on page 14 undefined on input line 30.
-
-[14 <./resources/5_H_E_examples.png>]
-<resources/5_3_classes.png, id=351, 946.53625pt x 380.42125pt>
-File: resources/5_3_classes.png Graphic file (type png)
-<use resources/5_3_classes.png>
-Package pdftex.def Info: resources/5_3_classes.png  used on input line 34.
-(pdftex.def)             Requested size: 441.01773pt x 177.24812pt.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 15 undefined on input line 35.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 15 undefined on input line 35.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 15 undefined on input line 41.
-
-[15 <./resources/5_3_classes.png>]
-
-Package natbib Warning: Citation `sudre2017generalised' on page 16 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Gibson2018' on page 16 undefined on input line 49.
-
-
-Package natbib Warning: Citation `DBLP:journals/corr/HeZR015' on page 16 undefined on input line 50.
-
-
-Package natbib Warning: Citation `DBLP:journals/corr/KingmaB14' on page 16 undefined on input line 52.
-
-
-Package natbib Warning: Citation `DBLP:journals/corr/KingmaB14' on page 16 undefined on input line 53.
-
-[16]
-<resources/5_synthetic_data.png, id=364, 954.56625pt x 496.85625pt>
-File: resources/5_synthetic_data.png Graphic file (type png)
-<use resources/5_synthetic_data.png>
-Package pdftex.def Info: resources/5_synthetic_data.png  used on input line 72.
-(pdftex.def)             Requested size: 441.01773pt x 229.5498pt.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 17 undefined on input line 73.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 17 undefined on input line 73.
-
-
-LaTeX Warning: Reference `chap-method' on page 17 undefined on input line 79.
-
-
-Package natbib Warning: Citation `7164042' on page 17 undefined on input line 79.
-
-[17 <./resources/5_synthetic_data.png>]
-<resources/5_stain_normalized.png, id=370, 950.55125pt x 475.7775pt>
-File: resources/5_stain_normalized.png Graphic file (type png)
-<use resources/5_stain_normalized.png>
-Package pdftex.def Info: resources/5_stain_normalized.png  used on input line 83.
-(pdftex.def)             Requested size: 441.01773pt x 220.74057pt.
-<resources/5_post_processing.png, id=373, 952.55875pt x 259.97125pt>
-File: resources/5_post_processing.png Graphic file (type png)
-<use resources/5_post_processing.png>
-Package pdftex.def Info: resources/5_post_processing.png  used on input line 94.
-(pdftex.def)             Requested size: 441.01773pt x 120.36176pt.
-
-
-Package natbib Warning: Citation `he_dataset_kumar' on page 18 undefined on input line 107.
-
-[18 <./resources/5_stain_normalized.png>]
-<resources/5_Unet_gcnn_result.png, id=382, 290.08376pt x 430.60875pt>
-File: resources/5_Unet_gcnn_result.png Graphic file (type png)
-<use resources/5_Unet_gcnn_result.png>
-Package pdftex.def Info: resources/5_Unet_gcnn_result.png  used on input line 111.
-(pdftex.def)             Requested size: 374.86775pt x 556.49945pt.
-<resources/5_ablation.png, id=383, 965.6075pt x 624.3325pt>
-File: resources/5_ablation.png Graphic file (type png)
-<use resources/5_ablation.png>
-Package pdftex.def Info: resources/5_ablation.png  used on input line 123.
-(pdftex.def)             Requested size: 441.01773pt x 285.14822pt.
- [19 <./resources/5_post_processing.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 150.
-
-
-Overfull \hbox (13.23463pt too wide) in paragraph at lines 152--172
- [][] 
- []
-
-[20] [21]
-
-Package natbib Warning: Citation `gcnn' on page 22 undefined on input line 218.
-
-[22]
-Overfull \hbox (5.04741pt too wide) in paragraph at lines 228--231
-[]\T5/cmr/m/it/13 In this chap-ter, we de-scribe the re-sults of our pro-posed method. Through
- []
-
-
-Overfull \hbox (2.42398pt too wide) in paragraph at lines 228--231
-\T5/cmr/m/it/13 care-fully de-signed ex-per-i-ments as well as ab-la-tion study, we have shown
- []
-
-) [23] [24 <./resources/5_Unet_gcnn_result.png>] [25 <./resources/5_ablation.png>])
 No file usmthesis.bbl.
 
 Package natbib Warning: Citation `DBLP:conf/mediaeval/HoangNNNT18' undefined on input line 299.
@@ -1751,7 +1483,7 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<publications/hthieu_media_eval_2018.pdf, id=424, 614.295pt x 794.97pt>
+<publications/hthieu_media_eval_2018.pdf, id=121, 614.295pt x 794.97pt>
 File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf  used on input line 304.
@@ -1760,7 +1492,7 @@ File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf  used on input line 304.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<publications/hthieu_media_eval_2018.pdf, id=427, page=1, 614.295pt x 794.97pt>
+<publications/hthieu_media_eval_2018.pdf, id=124, page=1, 614.295pt x 794.97pt>
 File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 1>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page1 used on input line 304.
@@ -1769,7 +1501,10 @@ File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 1>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page1 used on input line 304.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[26
+[1
+
+
+
 
 
 
@@ -1786,8 +1521,8 @@ File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 1>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page1 used on input line 304.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [27 <./publications/hthieu_media_eval_2018.pdf>]
-<publications/hthieu_media_eval_2018.pdf, id=468, page=2, 614.295pt x 794.97pt>
+ [2 <./publications/hthieu_media_eval_2018.pdf>]
+<publications/hthieu_media_eval_2018.pdf, id=165, page=2, 614.295pt x 794.97pt>
 File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 2>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page2 used on input line 304.
@@ -1800,8 +1535,8 @@ File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 2>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page2 used on input line 304.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [28 <./publications/hthieu_media_eval_2018.pdf>]
-<publications/hthieu_media_eval_2018.pdf, id=494, page=3, 614.295pt x 794.97pt>
+ [3 <./publications/hthieu_media_eval_2018.pdf>]
+<publications/hthieu_media_eval_2018.pdf, id=191, page=3, 614.295pt x 794.97pt>
 File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 3>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page3 used on input line 304.
@@ -1814,13 +1549,13 @@ File: publications/hthieu_media_eval_2018.pdf Graphic file (type pdf)
 <use publications/hthieu_media_eval_2018.pdf, page 3>
 Package pdftex.def Info: publications/hthieu_media_eval_2018.pdf , page3 used on input line 304.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [29 <./publications/hthieu_media_eval_2018.pdf>]
+ [4 <./publications/hthieu_media_eval_2018.pdf>]
 
 Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=499, 614.295pt x 794.97pt>
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=196, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf  used on input line 305.
@@ -1829,7 +1564,7 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf  used on input line 305.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=502, page=1, 614.295pt x 794.97pt>
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=199, page=1, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 1>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page1 used on input line 305.
@@ -1850,8 +1585,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 1>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[30 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=548, page=2, 614.295pt x 794.97pt>
+[5 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=246, page=2, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 2>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page2 used on input line 305.
@@ -1864,8 +1599,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 2>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page2 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [31 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=577, page=3, 614.295pt x 794.97pt>
+ [6 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=275, page=3, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 3>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page3 used on input line 305.
@@ -1878,8 +1613,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 3>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page3 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [32 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=603, page=4, 614.295pt x 794.97pt>
+ [7 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=300, page=4, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 4>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page4 used on input line 305.
@@ -1892,8 +1627,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 4>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page4 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [33 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=610, page=5, 614.295pt x 794.97pt>
+ [8 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=306, page=5, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 5>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page5 used on input line 305.
@@ -1906,8 +1641,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 5>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page5 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [34 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=616, page=6, 614.295pt x 794.97pt>
+ [9 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=312, page=6, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 6>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page6 used on input line 305.
@@ -1920,8 +1655,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 6>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page6 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [35 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=621, page=7, 614.295pt x 794.97pt>
+ [10 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=317, page=7, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 7>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page7 used on input line 305.
@@ -1934,8 +1669,8 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 7>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page7 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [36 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
-<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=632, page=8, 614.295pt x 794.97pt>
+ [11 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+<publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, id=329, page=8, 614.295pt x 794.97pt>
 File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf Graphic file (type pdf)
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 8>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page8 used on input line 305.
@@ -1948,13 +1683,13 @@ File: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Seg
 <use publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf, page 8>
 Package pdftex.def Info: publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf , page8 used on input line 305.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [37 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
+ [12 <./publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf>]
 
 Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=637, 614.295pt x 794.97pt>
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=334, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf  used on input line 306.
@@ -1963,7 +1698,7 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf  used on input line 306.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=640, page=1, 614.295pt x 794.97pt>
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=337, page=1, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 1>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page1 used on input line 306.
@@ -1984,8 +1719,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 1>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page1 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[38 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=665, page=2, 614.295pt x 794.97pt>
+[13 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=363, page=2, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 2>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page2 used on input line 306.
@@ -1998,8 +1733,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 2>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page2 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [39 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=682, page=3, 614.295pt x 794.97pt>
+ [14 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=379, page=3, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 3>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page3 used on input line 306.
@@ -2012,8 +1747,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 3>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page3 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [40 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=696, page=4, 614.295pt x 794.97pt>
+ [15 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=393, page=4, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 4>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page4 used on input line 306.
@@ -2026,8 +1761,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 4>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page4 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [41 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=710, page=5, 614.295pt x 794.97pt>
+ [16 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=407, page=5, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 5>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page5 used on input line 306.
@@ -2040,8 +1775,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 5>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page5 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [42 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=733, page=6, 614.295pt x 794.97pt>
+ [17 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=431, page=6, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 6>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page6 used on input line 306.
@@ -2054,8 +1789,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 6>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page6 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [43 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=741, page=7, 614.295pt x 794.97pt>
+ [18 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=439, page=7, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 7>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page7 used on input line 306.
@@ -2068,8 +1803,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 7>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page7 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [44 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=760, page=8, 614.295pt x 794.97pt>
+ [19 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=457, page=8, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 8>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page8 used on input line 306.
@@ -2082,8 +1817,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 8>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page8 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [45 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=774, page=9, 614.295pt x 794.97pt>
+ [20 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=470, page=9, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 9>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page9 used on input line 306.
@@ -2096,8 +1831,8 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 9>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page9 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [46 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
-<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=794, page=10, 614.295pt x 794.97pt>
+ [21 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+<publications/Manucript_MoNuseg_v1_0_14March2019.pdf, id=491, page=10, 614.295pt x 794.97pt>
 File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf)
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 10>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page10 used on input line 306.
@@ -2110,13 +1845,13 @@ File: publications/Manucript_MoNuseg_v1_0_14March2019.pdf Graphic file (type pdf
 <use publications/Manucript_MoNuseg_v1_0_14March2019.pdf, page 10>
 Package pdftex.def Info: publications/Manucript_MoNuseg_v1_0_14March2019.pdf , page10 used on input line 306.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [47 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
+ [22 <./publications/Manucript_MoNuseg_v1_0_14March2019.pdf>]
 
 Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<publications/hthieu_BioMedia_2019.pdf, id=799, 614.295pt x 794.97pt>
+<publications/hthieu_BioMedia_2019.pdf, id=496, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf  used on input line 307.
@@ -2125,7 +1860,7 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf  used on input line 307.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<publications/hthieu_BioMedia_2019.pdf, id=802, page=1, 614.295pt x 794.97pt>
+<publications/hthieu_BioMedia_2019.pdf, id=499, page=1, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 1>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page1 used on input line 307.
@@ -2146,8 +1881,8 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 1>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[48 <./publications/hthieu_BioMedia_2019.pdf>]
-<publications/hthieu_BioMedia_2019.pdf, id=824, page=2, 614.295pt x 794.97pt>
+[23 <./publications/hthieu_BioMedia_2019.pdf>]
+<publications/hthieu_BioMedia_2019.pdf, id=522, page=2, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 2>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page2 used on input line 307.
@@ -2160,8 +1895,8 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 2>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page2 used on input line 307.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [49 <./publications/hthieu_BioMedia_2019.pdf>]
-<publications/hthieu_BioMedia_2019.pdf, id=842, page=3, 614.295pt x 794.97pt>
+ [24 <./publications/hthieu_BioMedia_2019.pdf>]
+<publications/hthieu_BioMedia_2019.pdf, id=540, page=3, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 3>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page3 used on input line 307.
@@ -2174,8 +1909,8 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 3>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page3 used on input line 307.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [50 <./publications/hthieu_BioMedia_2019.pdf>]
-<publications/hthieu_BioMedia_2019.pdf, id=870, page=4, 614.295pt x 794.97pt>
+ [25 <./publications/hthieu_BioMedia_2019.pdf>]
+<publications/hthieu_BioMedia_2019.pdf, id=568, page=4, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 4>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page4 used on input line 307.
@@ -2188,8 +1923,8 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 4>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page4 used on input line 307.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [51 <./publications/hthieu_BioMedia_2019.pdf>]
-<publications/hthieu_BioMedia_2019.pdf, id=905, page=5, 614.295pt x 794.97pt>
+ [26 <./publications/hthieu_BioMedia_2019.pdf>]
+<publications/hthieu_BioMedia_2019.pdf, id=601, page=5, 614.295pt x 794.97pt>
 File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 5>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page5 used on input line 307.
@@ -2202,34 +1937,34 @@ File: publications/hthieu_BioMedia_2019.pdf Graphic file (type pdf)
 <use publications/hthieu_BioMedia_2019.pdf, page 5>
 Package pdftex.def Info: publications/hthieu_BioMedia_2019.pdf , page5 used on input line 307.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [52 <./publications/hthieu_BioMedia_2019.pdf>]
+ [27 <./publications/hthieu_BioMedia_2019.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
-(./usmthesis.aux (./advisor-comment.aux) (./reviewer-comment.aux) (./acknowledgements.aux) (./syllabus.aux) (./chap-experiment-endoscopy.aux) (./chap-experiment.aux))
+(./usmthesis.aux (./advisor-comment.aux) (./reviewer-comment.aux) (./acknowledgements.aux) (./syllabus.aux) (./chapter:literature-review.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `usmthesis.out' has not changed.
-(rerunfilecheck)             Checksum: A79DA9CF7CE7B40D8CBBB4CB8589B1E8;3136.
+(rerunfilecheck)             Checksum: 66853A796CC701926B26B2964544853F;1055.
  ) 
 Here is how much of TeX's memory you used:
- 33991 strings out of 476025
- 620718 string characters out of 5790017
- 1872388 words of memory out of 5000000
- 53532 multiletter control sequences out of 15000+600000
- 554561 words of font info for 116 fonts, out of 8000000 for 9000
+ 33571 strings out of 476025
+ 612239 string characters out of 5790017
+ 1871388 words of memory out of 5000000
+ 53260 multiletter control sequences out of 15000+600000
+ 541114 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,18n,106p,1198b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/uhvb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on usmthesis.pdf (68 pages, 25300982 bytes).
+ 108i,17n,106p,813b,705s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/uhvb8v.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
+Output written on usmthesis.pdf (41 pages, 6663025 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 793 compressed objects within 8 object streams
- 141 named destinations out of 1000 (max. 500000)
- 399 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 701 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

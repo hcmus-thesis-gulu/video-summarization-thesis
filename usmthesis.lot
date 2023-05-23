@@ -1,6 +1,2 @@
 \babel@toc {english}{}\relax 
 \raggedright \sloppy 
-\contentsline {table}{\numberline {1.2}{\ignorespaces Medico: The 2018 Multimedia for Medicine Task challenge result\relax }}{11}{table.45}%
-\contentsline {table}{\numberline {1.1}{\ignorespaces The official evaluation result of HCMUS team for both sub-tasks (provided by the organizers) and speed (fps) on Tesla K80 GPU\relax }}{11}{table.44}%
-\contentsline {table}{\numberline {2.1}{\ignorespaces MoNuSeg Challenge 2018 result.\relax }}{21}{table.67}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Quantitative comparison of each proposed component of the U-Net architecture and training procedure. -D.A: without our proposed synthetic data; -R.S: without residual blocks on the long-skip connections; -G.E.: the U-Net without group-equivariant operations.\relax }}{22}{table.69}%

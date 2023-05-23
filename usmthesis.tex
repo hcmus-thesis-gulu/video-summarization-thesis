@@ -1,106 +1,13 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% usmthesis.cls 2016/12/08 version V1.7.
-%%
-%% IMPORTANT MESSAGE (Dec 2016)
-%% Due to the recent numerous changes requested by IPS, USM to different
-%% candidates -- often conflicting even within the same week -- without much
-%% consistency nor in black in white, I have found it increasingly difficult
-%% to maintain a coherent version. I have therefore decided to provide some
-%% options that seem to be favored by IPS on different occasions; but will no
-%% longer update the template until an updated formatting guidelines with clear
-%% instructions and concrete samples is published.
-%%
-%% THERE WILL BE NO FURTHER UPDATES UNTIL IPS-USM PUBLISHES AN OFFICIAL
-%% UPDATED FORMATTING GUIDELINES WITH CONCRETE, CLEAR INSTRUCTIONS.
-%%
-%% Individual requests for help to modify this version for your needs will be
-%% handled on a case by case basis, depending on my mood, perhaps for a fee.
-%% Requests for help to modify past versions will NOT be entertained.
-%% Please read http://tex.my/how-to-ask-for-latex-related-help-effectively/.
-%%
-%% (Yes I'm that tired and frustrated. I know everyone just want to graduate,
-%% but I am by now genuinely put off by the tone of some requests with rude
-%% attitudes, unclear descriptions, flip-flopping conditions, etc for something
-%% that was originally for my own use.)
-%%
-%% Usmthesis _was_ fun; but it has ceased to be so for me.
-%%
-%% Submit a git pull request on https://github.com/liantze/usmthesis
-%% if you wish to contribute your changes. No timeframe is set for approvals.
-%% I cannot check through any edited usmthesis.cls of any version without
-%% CVS.
-%%
-%% Oh and if you'd like to adapt this template (the .cls and/or the .tex) for
-%% your institution, that's perfectly fine, but at least keep the license
-%% (LPPL 1.3) and the original author (me) won't you? It's just normal decency.
-%% THANK you. :-)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% If you prefer -- and have been allowed -- to use
-%% Arial, then
-%% \documentclass[arial]{usmthesis}
-%% It's not really Arial, it's a Helvetica look-alike,
-%% but if you're not a designer nor a typographer, you
-%% probably can't tell the difference (I can't either)
-%%
-%% OTHER IMPORTANT OPTIONS:
-%% singespacetitle - Make title on cover and title
-%%                   page single-spaced.
-%%
-%% chapnumwords — Make chapter titles be `Chapter One'
-%% tocchapnumwords — Make the ToC use `Chaper One' too
-%%   (Engineering IPS seems to like the above two settings)
-%%
-%% tocpage   These options will add a ``Page'' label at the
-%% lotpage   top of the Table of Contents, List of Tables,
-%% lofpage   List of Figures and List of Plates respectively.
-%% loppage   I don't know lah, one moment IPS says must add at
-%%           the top of all these lists; one month later say
-%%           only the ToC, a few months later say don't add at all.
-%%           Find, mix-and-match yourself based on the instrustions you got.
-%%
-%% tocCAPSfront - Sometimes IPS wants the ``Table of Contents'', ``List of
-%%                Figures'', ``Abstract'' etc to be all-caps in the ToC;
-%%                sometimes they don't. Use this option to make them ALL CAPS.
-%%
-%% tocCAPSref - Similar to the above but for the ``References''.
-%% tocCAPSapp - Similar to the above but for the ``Appendices''.
 \documentclass[
-singlespacetitle, % Make title on cover page singlespaced
-% chapnumwords,tocchapnumwords,  %% ``Chapter One'' I think Engineering like this
-tocpage,  % Put ``Page'' at top of ToC. Add lotpage, lofpage if
-          % ``Page'' is also needed for LoT and LoF.
-% tocCAPSfront, % Make ``List of Tables'' etc in ToC CAPS
-% tocCAPSref, % Make ``References'' in ToC CAPS
-% tocCAPSapp, % Make ``Appendices'' in ToC CAPS
+singlespacetitle, 
+tocpage, 
 ]{usmthesis}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is usmthesis.tex, 6 Dec 2016. READ THE COMMENTS.
-% Some formattings are easiest changed by uncommenting
-% some lines in this .tex file or by changing certain
-% options.
-%
-% Created by Lim Lian Tze (Ph.D.)
-% liantze@gmail.com
-% http://liantze.penguinattack.org.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usepackage{pdfpages}
 \usepackage{afterpage}
 \usepackage{import}
-
-% Set font size to 13pt
 \usepackage{scrextend}
 \changefontsizes{13pt}
-
-%% Example of loading other packages that you may require.
-%% I'm loading the marvosym package so that I can produce a
-%% smiley face with the command \Smiley.
 \usepackage{marvosym}
-
-%% Also, the enumitem package is great for customising
-%% list environments.
 \usepackage{enumitem}
 \usepackage{tabu}
 \usepackage{booktabs}
@@ -109,69 +16,30 @@ tocpage,  % Put ``Page'' at top of ToC. Add lotpage, lofpage if
 \usepackage{multicol}
 \usepackage{bm}
 \usepackage{bibentry}
-
-
-
-%% Listings is a nice package for typesetting code
-%% listings. Other possible packages include fancyvrb,
-%% minted, etc.
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,breaklines=true}
-
-%% For those who need to produce algorithms and pseudocode.
-%% There are a number of different packages available, but
-%% unfortunately they tend not to work well together!
-%% I'm using algorithmicx, specifically algpseucode, here.
 \usepackage{algpseudocode}
 \usepackage{algorithm}
 \usepackage{indentfirst}
-
-
-%% PHAT PLACE
 \usepackage{caption}
 \usepackage{graphicx}
-%% NHAT PLACE
-\usepackage{amssymb}% http://ctan.org/pkg/amssymb
-\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{amssymb}
+\usepackage{pifont}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-% \usepackage{subcaption} ERROR ?
 \usepackage{ulem}
 \newcommand{\tvhung}[2]{\sout{#1}\textcolor{blue}{\textbf{#2}}}
-%------------------------------
 
-%% Enter particulars about your thesis HERE
-% Your Name
-\author{HOÀNG XUÂN NHẬT \hspace{5mm} 18125042 \\ NGUYỄN E RÔ \hspace{17.5mm} 18125046}
-
-% English title of your thesis
-\title{SMART INTERACTIVE RETRIEVAL OF VISUAL DATA VIA SEMANTIC UNDERSTANDING}
-% Vietnamese title of your thesis
-% \title{Phát triển giải pháp hỗ trợ y tế thông minh với các thuật toán học sâu trên dữ liệu thị giác}
-% Malay title of your thesis
-% \titlems{Penulisan Tesis dengan LaTeX}
-% Year submitted
-\submityear{2022}
-% Month submitted
+\author{HUỲNH LÂM HẢI ĐĂNG \hspace{5mm} 19125003 \\ HỒ THỊ NGỌC PHƯỢNG \hspace{5mm} 19125014}
+\title{ENHANCING VIDEO SUMMARIZATION WITH CONTEXT AWARENESS}
+\submityear{2023}
 \submitmonth{July}
-%% Choose only 1 degree type! :-)
 \degreetype{BACHELOR OF SCIENCE IN COMPUTER SCIENCE}
-% \degreetype{Master of Science}
-\lecturer{ASSOC. PROF. TRẦN MINH TRIẾT}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can comment out the following line if you don't have a
-% "List of Own Publications". And make it all caps yourself
-% if it needs to be all caps in the ToC.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lecturer{ASSOC. PROF. TRẦN MINH TRIẾT \\ DR. LÊ TRUNG NGHĨA}
 \newcites{own}{List of Publications}
 
 \usepackage[plainpages=false,bookmarksnumbered,
 bookmarksdepth=section,breaklinks=true]{hyperref}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Options for generating hyperlinks when using pdfLaTeX
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -204,141 +72,39 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 
 
 \begin{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Default bibliography style is apa (using
-% \RequirePackage[natbibapa]{apacite} in the class file).
-%
-% If you prefer the number system though, use bibliography
-% style "plainnat" for [1][2][3] or "alpha" for [Jon94] (the label
-% will be auto-generated).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \bibliographystyle{apacite}
-% \bibliographystyleown{apacite}
-% \bibliographystyle{plainnat}
-% \bibliographystyleown{plainnat}
 \bibliographystyle{ieeetr}
 \bibliographystyleown{ieeetr}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Inserts the cover page (the hard cover with gold-lettering)
-% and the title page
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makecover
 \frontmatter
 
+\include{content/advisor-comment}
+\include{content/reviewer-comment}
+\include{content/acknowledgements}
+\include{content/syllabus}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MAKE SURE YOU HAVE A acknowledgements.tex FILE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \import{content/appendices}{advisor-comment.tex}
-% \import{content/appendices}{reviewer-comment.tex}
-% \includepdf[pages=-]{content/appendices/advisor_comment}
-% \includepdf[pages=-]{content/appendices/reviewer_comment}
-% \addtocounter{page}{-4}   
-% \import{content/appendices}{acknowledgements.tex}
-% \import{content}{syllabus.tex}
-% by FIT's requirement, proposal does not have page numbering
-% and the page after the proposal (ToC) starts from ii
-% \includepdf[pages=-]{content/appendices/ThesisProposal-V3}
-% \addtocounter{page}{-4}   
 \tableofcontents \clearpage
 \listoftables \clearpage
 \listoffigures \clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can comment out the following line if you don't
-% have a "List of Plates"
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \listofplates \clearpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can comment out the following line if you don't
-% have a "List of Acronyms"
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \include{loa}
-
-% Paragraph spacing
-% \setlength\parskip{0.6em}
-% Text-float spacing
 \setlength\intextsep{24pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Your Malay and English abstracts, each in one file.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \input{abs-mal}
-\input{content/abs-eng}
+\include{content/abstract}
 
 \mainmatter
+\import{content}{main-chaps.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The actual chapters of your thesis as listed in
-% mainchaps.tex. Make sure you have the relevant
-% chapter files.
-% E.g. if you mainchaps.tex contains the lines
-%
-%  \include{hypothesis.tex}
-%  \include{proof.tex}
-%
-% Then you MUST have the files hypothesis.tex, proof.tex
-% (containing the relevant chapters) in the same directory
-% as mainchaps.tex.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \input{mainchaps}
-\import{content}{mainchaps.tex}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The bibliography. Turn on page numbering.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addtocontents{toc}{\protect\cftpagenumberson{chap}}
-%%%% Soooo if IPS says there should be 5cm top margin
-%%%% on the ``References'' heading page, uncomment the
-%%%% line just before and after \bibliography. Repeat for
-%%%% \bibliographyown if necessary
-%% Increase spacing before chapter heading
 \titlespacing*{\chapter}{0pt}{\dimexpr2.5cm-50pt}{\baselineskip}
 \bibliography{references/refs}
 % \bibliographystyle{plain}
 % now change it back to normal
 \titlespacing*{\chapter}{0pt}{-50pt}{\baselineskip}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The appendices.
-% If you don't have any, you may delete everything below,
-% until and including \input{appendices}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 
 \assignpagestyle{\chapter}{empty}
-% * If IPS says they don't want any page numbering in the footer,
-%   add \pagestyle{empty}
-% * If they don't want any page numbering in the ToC either,
-%   add \addtocontents{toc}{\protect\cftpagenumbersoff{chap}}
-% * If they say they don't want Appendix A, B, C... to appear
-%   in the ToC either, add
-%     \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
-%     \addtocontents{toc}{\texbf{List of Publications}} % (to get it to appear)
-% \input{appendices}
-% \assignpagestyle{\chapter}{plain}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The list of own publications.  If you don't have one, you may
-% comment out the next 4 lines.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Uncomment/comment this line if you need the List of Publications to be bold/not bold in the ToC.
 \addtocontents{toc}{\protect\renewcommand\protect\cftchapfont{\protect\bfseries}}
-% \texbf{Some results of this thesis are published in the following articles:} \\
 \bibliographyown{references/refs}
-% \bibitem{ntphat} [1] Tien-Phat Nguyen, Ba-Thinh Tran-Le, Xuan-Dang Thai, Tam V Nguyen, Minh N Do, and Minh-Triet Tran. Traffic Video Event Retrieval via Text Query using Vehicle Inter- and Intra-Attributes. (submitted to IEEE transactions on Circuits and Systems for Video Technology, under review). \\
-% \bibitem{nguyen2021traffic} [1] Tien-Phat Nguyen, Ba-Thinh Tran-Le, Xuan-Dang Thai, Tam V Nguyen, Minh N Do, and Minh-Triet Tran. Traffic video event retrieval via text query using vehicle appearance and motion attributes. In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 4165-4172, 2021. 
-
-
-
-\includepdf[pages=-,pagecommand={}]{publication/LSC2022}
-\includepdf[pages=-,pagecommand={}]{publication/VBS2022}
-\includepdf[pages=-,pagecommand={}]{publication/AAAI2023}
-\includepdf[pages=-,pagecommand={}]{publication/MTAP_LSC21_FIRST2}
-\includepdf[pages=-,pagecommand={}]{publication/CVPRW2022}
 
 \end{document}

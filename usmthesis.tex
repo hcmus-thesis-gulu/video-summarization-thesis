@@ -85,11 +85,10 @@ tocpage,  % Put ``Page'' at top of ToC. Add lotpage, lofpage if
 % liantze@gmail.com
 % http://liantze.penguinattack.org.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \documentclass[article]{memoir}
-% \feetbelowfloat
 
 \usepackage{pdfpages}
 \usepackage{afterpage}
+\usepackage{import}
 
 % Set font size to 13pt
 \usepackage{scrextend}
@@ -127,23 +126,38 @@ tocpage,  % Put ``Page'' at top of ToC. Add lotpage, lofpage if
 \usepackage{algorithm}
 \usepackage{indentfirst}
 
+
+%% PHAT PLACE
+\usepackage{caption}
+\usepackage{graphicx}
+%% NHAT PLACE
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+% \usepackage{subcaption} ERROR ?
+\usepackage{ulem}
+\newcommand{\tvhung}[2]{\sout{#1}\textcolor{blue}{\textbf{#2}}}
+%------------------------------
+
 %% Enter particulars about your thesis HERE
 % Your Name
-\author{HUỲNH LÂM HẢI ĐĂNG - 19125003\\
-	HỒ THỊ NGỌC PHƯỢNG - 19125014}
+\author{HOÀNG XUÂN NHẬT \hspace{5mm} 18125042 \\ NGUYỄN E RÔ \hspace{17.5mm} 18125046}
 
 % English title of your thesis
-\title{ENHANCING VIDEO SUMMARIZATION WITH CONTEXT AWARENESS}
+\title{SMART INTERACTIVE RETRIEVAL OF VISUAL DATA VIA SEMANTIC UNDERSTANDING}
+% Vietnamese title of your thesis
+% \title{Phát triển giải pháp hỗ trợ y tế thông minh với các thuật toán học sâu trên dữ liệu thị giác}
 % Malay title of your thesis
-\titlems{Penulisan Tesis dengan LaTeX}
+% \titlems{Penulisan Tesis dengan LaTeX}
 % Year submitted
-\submityear{2023}
+\submityear{2022}
 % Month submitted
 \submitmonth{July}
 %% Choose only 1 degree type! :-)
 \degreetype{BACHELOR OF SCIENCE IN COMPUTER SCIENCE}
 % \degreetype{Master of Science}
-\lecturer{ASSOC.PROF. TRẦN MINH TRIẾT - PROF.~LÊ~TRUNG~NGHĨA}
+\lecturer{ASSOC. PROF. TRẦN MINH TRIẾT}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You can comment out the following line if you don't have a
@@ -179,7 +193,16 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 \usetikzlibrary{calc}
 \usepackage{longtable}
 \usepackage{makecell}
-% \usepackage{biblatex}
+\usepackage{url}
+% \def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+
+% \usepackage{amsmath}
+% \DeclareMathOperator*{\argmax}{arg\,max}
+% \DeclareMathOperator*{\argmin}{arg\,min}
+
+
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -194,25 +217,32 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 % \bibliographystyleown{apacite}
 % \bibliographystyle{plainnat}
 % \bibliographystyleown{plainnat}
-\bibliographystyle{unsrtnat}
-\bibliographystyleown{unsrtnat}
-\frontmatter
+\bibliographystyle{ieeetr}
+\bibliographystyleown{ieeetr}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inserts the cover page (the hard cover with gold-lettering)
 % and the title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makecover
+\frontmatter
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MAKE SURE YOU HAVE A acknowledgements.tex FILE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{advisor-comment}
-\include{reviewer-comment}
-\include{acknowledgements}
-\include{syllabus}
 
+% \import{content/appendices}{advisor-comment.tex}
+% \import{content/appendices}{reviewer-comment.tex}
+% \includepdf[pages=-]{content/appendices/advisor_comment}
+% \includepdf[pages=-]{content/appendices/reviewer_comment}
+% \addtocounter{page}{-4}   
+% \import{content/appendices}{acknowledgements.tex}
+% \import{content}{syllabus.tex}
+% by FIT's requirement, proposal does not have page numbering
+% and the page after the proposal (ToC) starts from ii
+% \includepdf[pages=-]{content/appendices/ThesisProposal-V3}
+% \addtocounter{page}{-4}   
 \tableofcontents \clearpage
 \listoftables \clearpage
 \listoffigures \clearpage
@@ -237,8 +267,7 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 % Your Malay and English abstracts, each in one file.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \input{abs-mal}
-\input{abs-eng}
-
+\input{content/abs-eng}
 
 \mainmatter
 
@@ -255,7 +284,9 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 % (containing the relevant chapters) in the same directory
 % as mainchaps.tex.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{mainchaps}
+% \input{mainchaps}
+\import{content}{mainchaps.tex}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The bibliography. Turn on page numbering.
@@ -267,7 +298,7 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 %%%% \bibliographyown if necessary
 %% Increase spacing before chapter heading
 \titlespacing*{\chapter}{0pt}{\dimexpr2.5cm-50pt}{\baselineskip}
-\bibliography{refs}
+\bibliography{references/refs}
 % \bibliographystyle{plain}
 % now change it back to normal
 \titlespacing*{\chapter}{0pt}{-50pt}{\baselineskip}
@@ -278,6 +309,7 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 % until and including \input{appendices}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
+
 \assignpagestyle{\chapter}{empty}
 % * If IPS says they don't want any page numbering in the footer,
 %   add \pagestyle{empty}
@@ -296,16 +328,17 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Uncomment/comment this line if you need the List of Publications to be bold/not bold in the ToC.
 \addtocontents{toc}{\protect\renewcommand\protect\cftchapfont{\protect\bfseries}}
-\nociteown{DBLP:conf/mediaeval/HoangNNNT18}
-\nociteown{G-U-Net}
-\nociteown{nucleus_seg_underreview}
-\nociteown{biomedia2019_underreview}
-\bibliographyown{refs}
-\includepdf[page=-]{publications/hthieu_media_eval_2018.pdf}
-\includepdf[page=-]{publications/Chidester_Enhanced_Rotation-Equivariant_U-Net_for_Nuclear_Segmentation_CVPRW_2019_paper.pdf}
-\includepdf[page=-]{publications/Manucript_MoNuseg_v1_0_14March2019.pdf}
-\includepdf[page=-]{publications/hthieu_BioMedia_2019.pdf}
+% \texbf{Some results of this thesis are published in the following articles:} \\
+\bibliographyown{references/refs}
+% \bibitem{ntphat} [1] Tien-Phat Nguyen, Ba-Thinh Tran-Le, Xuan-Dang Thai, Tam V Nguyen, Minh N Do, and Minh-Triet Tran. Traffic Video Event Retrieval via Text Query using Vehicle Inter- and Intra-Attributes. (submitted to IEEE transactions on Circuits and Systems for Video Technology, under review). \\
+% \bibitem{nguyen2021traffic} [1] Tien-Phat Nguyen, Ba-Thinh Tran-Le, Xuan-Dang Thai, Tam V Nguyen, Minh N Do, and Minh-Triet Tran. Traffic video event retrieval via text query using vehicle appearance and motion attributes. In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 4165-4172, 2021. 
 
 
+
+\includepdf[pages=-,pagecommand={}]{publication/LSC2022}
+\includepdf[pages=-,pagecommand={}]{publication/VBS2022}
+\includepdf[pages=-,pagecommand={}]{publication/AAAI2023}
+\includepdf[pages=-,pagecommand={}]{publication/MTAP_LSC21_FIRST2}
+\includepdf[pages=-,pagecommand={}]{publication/CVPRW2022}
 
 \end{document}

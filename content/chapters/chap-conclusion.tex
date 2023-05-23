@@ -1,0 +1,39 @@
+\chapter{Conclusion}
+\label{chap-conclusion}
+\begin{ChapAbstract}
+This chapter summarizes our work, emphasizing our contributions to the interactive retrieval system with a cutting-edge explainability module. Furthermore, we discuss our future work to improve the effectiveness of our algorithms and enhance the user experience in our retrieval system besides upgrading our referring segmentation module for better explainability. 
+\end{ChapAbstract}
+
+% \section{Summary}
+% In this thesis, we propose an interactive retrieval application that let the user quickly search for a particular moment by using various tools. Our system provides explainability through a referring expression segmentation module named VLFormer, which is an end-to-end simple and unified query-based network. Experiments show that our overall system and our segmentation framework in particular achieve competitive results in several benchmarks and datasets. Our contribution is as follows:
+% \begin{itemize}
+%     \item We tackle the multimedia retrieval problem on large-scale data and provide an interactive application that is usable by both novice and experts.
+%     \item We enhance our application with a cutting-edge referring expression segmentation module, which can provide explainability and improve readability and reliability.
+%     \item We carefully study the behaviour of users when they use our system to point out systematic differences and propose practices that users can employ to maximize the effectiveness when using our system.
+% \end{itemize}
+
+% \section{Future work}
+% \label{sec:future_work}
+% Due to the flexible nature of our system, it is easy to integrate additional components. To effectively handle large collections of data, more pre-processing steps are needed to shrink the number of items in the index. While our current processing steps already compress the dataset by a factor of approximately 3, there are still redundancies that hinder the search process in some cases. 
+
+% On the other hand, to boost interaction speed, the user interface can be further improved. Based of the various components that the underlying system support and the already fast speed of processing, the user interface can accommodate more creative means of browsing, similar to the existing Timeline View feature. This will especially benefit novice users, as existing systems are biased towards experts by having advanced yet hidden features that only experts can use well.
+
+% We can further exploit the link between text and visual domains to achieve the ultimate goal of providing reliability in our system. Besides our competitive results in several datasets, there is a variety of promising improvements from our approach. Our current approach exploits only the Text Encoder from the CLIP. Utilizing the whole model from CLIP (both Text Encoder and Visual Encoder) can achieve better accuracy in the cross-modal fusion. The CLIP Visual Encoder is used to generate the global features from an image, while our visual backbone needs the multi-scale features. However, a promising way is to use the knowledge distillation not only to keep the rich multi-scale features but also to guide the global feature of the image by the CLIP Visual Encoder to boost the harmony between the linguistic features and visual features.
+
+% eureka
+
+\section{Summary}
+In this project, we propose an interactive retrieval application that let the user quickly search for a particular moment by using various tools. Our system provides explainability through a referring expression segmentation module named VLFormer, which is an end-to-end simple and unified query-based network. Experiments show that our overall system and our segmentation framework in particular achieve competitive results in several benchmarks and datasets. Our contribution is as follows:
+\begin{itemize}
+    \item We tackle the multimedia retrieval problem on large-scale data and provide an interactive application that is usable by both novice and experts.
+    \item We enhance our application with a cutting-edge referring expression segmentation module, which can provide explainability and improve readability and reliability.
+    \item We carefully study the behaviour of users when they use our system to point out systematic differences and propose practices that users can employ to maximize the effectiveness when using our system.
+\end{itemize}
+
+\section{Future work}
+\label{sec:future_work}
+Due to the flexible nature of our system, it is easy to integrate additional components. To effectively handle large collections of data, more pre-processing steps are needed to shrink the number of items in the index. While our current processing steps already compress the dataset by a factor of approximately 3, there are still redundancies that hinder the search process in some cases. 
+
+On the other hand, to boost interaction speed, the user interface can be further improved. Based of the various components that the underlying system support and the already fast speed of processing, the user interface can accommodate more creative means of browsing, similar to the existing Timeline View feature. This will especially benefit novice users, as existing systems are biased towards experts by having advanced yet hidden features that only experts can use well.
+
+We can further exploit the link between text and visual domains to achieve the ultimate goal of providing reliability in our system. Besides our competitive results in several datasets, there is a variety of promising improvements from our approach. Our current approach exploits only the Text Encoder from the CLIP. Utilizing the whole model from CLIP (both Text Encoder and Visual Encoder) can achieve better accuracy in the cross-modal fusion. The CLIP Visual Encoder is used to generate the global features from an image, while our visual backbone needs the multi-scale features. However, a promising way is to use the knowledge distillation not only to keep the rich multi-scale features but also to guide the global feature of the image by the CLIP Visual Encoder to boost the harmony between the linguistic features and visual features.

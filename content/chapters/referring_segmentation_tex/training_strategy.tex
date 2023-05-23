@@ -1,0 +1,20 @@
+\section{Training strategy}
+\label{sec:rvos_training_strategy}
+\subsection{Deep supervision}
+Training a deep neural network is challenging. Due to the vanishing gradient problem, the final loss may not be effectively back propagated to the shallow layers. To address this issue, we add more auxiliary losses after each Visual-Linguistic Transformer Block.
+
+Specifically, when the object queries are updated, these features will be multiplied with the pixel-level embeddings of the pixel decoder to generate the probability segmentation map. By utilizing the same loss function for this segmentation map, we can obtain the auxiliary loss at this stage. Without these losses, the model's target is to create a final object features represented by the referred object and the outputs of previous blocks are not paid attention to. Then those outputs can be anything, and we could not handle them. With auxiliary losses, however, the model can learn robust features even in the early layers. Then the deeper blocks the object queries are fed into, the more accurate they are. 
+
+
+\subsection{Efficient training memory}
+% Describe how to reduce the mem, time, and cost when using PointRend strategy to calculate the loss. 
+
+Due to the lacking resources for training, especially in GPU VRAM, reducing the size of the model used to be the only way. Thanks to PointRend, Implicit PointRend, and Mask2Former, we can now build a larger model with small memory. The research shows that training the mask loss on $K$ randomly sampled points instead of the whole mask reduces not only the usage memory but also improves the performance. 
+We choose $K = 112 \times 112 = 12544$, the memory used is decreasing dramatically, and it helps us save a lot of resources to train the network.
+
+
+
+
+
+
+

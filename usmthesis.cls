@@ -245,7 +245,7 @@
 %% (Helvetica is loaded in lieu of Arial, which is
 %% commercial.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\RequirePackage{mathptmx}
+% \RequirePackage{mathptmx}
 \RequirePackage{helvet}
 \RequirePackage{textcase}
 \renewcommand{\ttdefault}{lmtt}
@@ -279,8 +279,12 @@
 % here. Babel now supports bahasam.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{vietnam}
+\usepackage{setspace}
 \RequirePackage[bahasam,english]{babel}
 
+% \RequirePackage{scrlfile}                       % Prevent svg (<2.0) package 
+% \PreventPackageFromLoading{subfig}              % from loading subfig.
+                                                % See also iss. #13
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Default spacing is double.  In your actual content,
@@ -595,8 +599,6 @@
 
 
 %% Creates the first two cover pages
-
-%% Creates the first two cover pages
 \newcommand\makecover{%
 \begin{titlepage}
 \begin{tikzpicture}[remember picture, overlay]
@@ -607,29 +609,29 @@
 %\vspace*{10mm}
 %
 
-UNIVERSITY OF SCIENCE\\
-FACULTY OF INFORMATION TECHNOLOGY\\
-ADVANCED PROGRAM IN COMPUTER SCIENCE\\
-\vspace*{50pt}
+UNIVERSITY OF SCIENCE \\
+% FACULTY OF INFORMATION TECHNOLOGY \\
+ADVANCED PROGRAM IN COMPUTER SCIENCE \\
+\vspace*{70pt}
 
 \fontsize{14pt}{16pt}\selectfont
-\MakeTextUppercase{Huỳnh Lâm Hải Đăng - Hồ Thị Ngọc Phượng}
+\MakeTextUppercase{HOÀNG XUÂN NHẬT - NGUYỄN E RÔ}
 
-\vspace*{60pt}
+\vspace*{80pt}
 \begingroup
 \if@singlespacetitle\singlespacing\fi
 \fontsize{20pt}{28pt}\selectfont%
 \MakeTextUppercase{\@title}\par
 \endgroup
 %
-\vspace*{60pt}
+\vspace*{70pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
 \MakeTextUppercase{\@degreetype}\par
 \endgroup
 
-\vspace*{150pt}
+\vspace*{160pt}
 HO CHI MINH CITY, \@submityear\par
 %
 %\vspace*{20mm}
@@ -645,19 +647,20 @@ HO CHI MINH CITY, \@submityear\par
 \fontfamily{phv}\selectfont
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
-UNIVERSITY OF SCIENCE\\
-FACULTY OF INFORMATION TECHNOLOGY\\
-ADVANCED PROGRAM IN COMPUTER SCIENCE\\
+UNIVERSITY OF SCIENCE \\
+% FACULTY OF INFORMATION TECHNOLOGY \\
+ADVANCED PROGRAM IN COMPUTER SCIENCE \\
 \endgroup
 
-\vspace*{50pt}
+\vspace*{70pt}
 
+\renewcommand{\baselinestretch}{1} 
 \begingroup
 \fontsize{14pt}{26pt}\selectfont
-\@author\par
+{\setstretch{1}\@author} \par
 \endgroup
 
-\vspace*{40pt}
+\vspace*{80pt}
 
 \begingroup
 \if@singlespacetitle\singlespacing\fi
@@ -665,26 +668,27 @@ ADVANCED PROGRAM IN COMPUTER SCIENCE\\
 \MakeTextUppercase{\@title}\par
 \endgroup
 
-\vspace*{50pt}
+\vspace*{70pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
 \MakeTextUppercase{\@degreetype}\par
 \endgroup
 
-\vspace*{50pt}
-
-\begingroup
-\fontsize{14pt}{16pt}\selectfont%
-THESIS ADVISORS:\\
-\MakeTextUppercase{\@lecturer}\par
-\endgroup
-
 \vspace*{100pt}
 
 \begingroup
+\fontsize{14pt}{16pt}\selectfont%
+\begin{spacing}{1.5}
+THESIS ADVISOR\\ \@lecturer \par
+\end{spacing}
+\endgroup
+
+\vspace*{50pt}
+
+\begingroup
 \fontsize{14pt}{16pt}\selectfont
-HO CHI MINH CITY, 2023
+HO CHI MINH CITY, 2022
 \endgroup
 
 \newpage
@@ -834,7 +838,7 @@ HO CHI MINH CITY, 2023
 }{}{}
 
 
-\newcommand{\appendixtocname}{Appendix}
+\newcommand{\appendixtocname}{Appendices}
 \pretocmd{\appendix}{%
   \clearpage
   \addtocontents{toc}{\protect\cftpagenumbersoff{part}}

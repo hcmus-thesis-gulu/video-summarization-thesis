@@ -4,19 +4,45 @@
 \contentsline {chapter}{Acknowledgement}{iv}{chapter*.3}%
 \contentsline {chapter}{Thesis Proposal}{v}{chapter*.4}%
 \contentsline {chapter}{Table of Contents}{ix}{chapter*.6}%
-\contentsline {chapter}{List of Tables}{x}{chapter*.7}%
-\contentsline {chapter}{List of Figures}{xi}{chapter*.8}%
-\contentsline {chapter}{Abstract}{xii}{chapter*.9}%
+\contentsline {chapter}{List of Tables}{xi}{chapter*.7}%
+\contentsline {chapter}{List of Figures}{xii}{chapter*.8}%
+\contentsline {chapter}{Abstract}{xiv}{chapter*.9}%
 \setlength {\cftbeforechapskip }{2\baselineskip }
 \cftpagenumbersoff {chap}
 \renewcommand \cftchapfont {\bfseries }
 \setlength {\cftchapnumwidth }{110.30507pt}
+\contentsline {chapter}{\numberline {1}\MakeUppercase []{Experimental Results of abnormalities findings and landmark detection for endoscopic images}}{1}{chapter.10}%
+\contentsline {section}{\numberline {1.1}Dataset and evaluation metrics}{1}{section.11}%
+\contentsline {subsection}{\numberline {1.1.1}Dataset}{1}{subsection.12}%
+\contentsline {subsection}{\numberline {1.1.2}Evaluation metrics}{4}{subsection.30}%
+\contentsline {section}{\numberline {1.2}Experimental setup}{5}{section.32}%
+\contentsline {subsection}{\numberline {1.2.1}Re-labeling Medico Development Dataset}{5}{subsection.33}%
+\contentsline {subsection}{\numberline {1.2.2}Abnormalities localization with Faster R-CNN}{5}{subsection.34}%
+\contentsline {subsection}{\numberline {1.2.3}ResNet Classifier and Multi-tasks Classifier}{6}{subsection.36}%
+\contentsline {section}{\numberline {1.3}Experimental results}{6}{section.37}%
+\contentsline {subsection}{\numberline {1.3.1}Abnormalities localization with Faster R-CNN results}{6}{subsection.38}%
+\contentsline {subsection}{\numberline {1.3.2}Medico: The 2018 Multimedia for Medicine Task - Official results}{7}{subsection.41}%
+\contentsline {chapter}{\numberline {2}\MakeUppercase []{Experimental Results FOR NUCLEAR SEGMENTATION PROBLEM}}{13}{chapter.46}%
+\contentsline {section}{\numberline {2.1}Data set and evaluation metrics}{13}{section.47}%
+\contentsline {subsection}{\numberline {2.1.1}Hematoxylin and Eosin (H\&E) stained histopathology images dataset}{13}{subsection.48}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Overview}{13}{subsubsection.49}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Dataset construction}{14}{subsubsection.51}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}Three-class ground-truth generation}{15}{subsubsection.52}%
+\contentsline {subsection}{\numberline {2.1.2}Evaluation metrics}{16}{subsection.54}%
+\contentsline {section}{\numberline {2.2}Experimental setup}{16}{section.55}%
+\contentsline {section}{\numberline {2.3}Experimental results}{17}{section.56}%
+\contentsline {subsection}{\numberline {2.3.1}Synthetic dataset}{17}{subsection.57}%
+\contentsline {subsection}{\numberline {2.3.2}Stain normalization}{17}{subsection.59}%
+\contentsline {subsection}{\numberline {2.3.3}Post-processing results}{18}{subsection.61}%
+\contentsline {subsection}{\numberline {2.3.4}Fully-enhanced network}{19}{subsection.63}%
+\contentsline {subsection}{\numberline {2.3.5}MoNuSeg Challenge result}{20}{subsection.66}%
+\contentsline {subsection}{\numberline {2.3.6}Ablation study}{20}{subsection.68}%
 \cftpagenumberson {chap}
 \cftpagenumbersoff {part}
 \cftpagenumbersoff {chapter}
 \setlength {\cftbeforechapskip }{\baselineskip }
 \renewcommand \cftchapfont {\mdseries }
-\contentsline {part}{\bfseries Appendix}{1}{section*.10}%
+\contentsline {part}{\bfseries Appendix}{26}{section*.70}%
 \renewcommand {\cftchappresnum }{\appendixname \space }
 \setlength {\cftchapnumwidth }{99.00053pt}
 \renewcommand \cftchapfont {\bfseries }

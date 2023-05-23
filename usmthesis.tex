@@ -95,9 +95,7 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 
 \addtocontents{toc}{\protect\cftpagenumberson{chap}}
 \titlespacing*{\chapter}{0pt}{\dimexpr2.5cm-50pt}{\baselineskip}
-\bibliography{references/refs}
-% \bibliographystyle{plain}
-% now change it back to normal
+\bibliography{references}
 \titlespacing*{\chapter}{0pt}{-50pt}{\baselineskip}
 
 \appendix
@@ -105,6 +103,6 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 \assignpagestyle{\chapter}{empty}
 
 \addtocontents{toc}{\protect\renewcommand\protect\cftchapfont{\protect\bfseries}}
-\bibliographyown{references/refs}
+\bibliographyown{references}
 
 \end{document}

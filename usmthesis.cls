@@ -1,197 +1,15 @@
-%% usmthesis.cls 2016/12/08 version V1.7.
-%% Copyright (c) 2005-2016 by Lim Lian Tze (OH MY GOODNESS HAS IT BEEN THAT LONG)
-%% Current maintainer: Lim Lian Tze (liantze@gmail.com)
-%
-%% This is an unofficial USM thesis LaTeX class for postgraduate research
-%% students of Universiti Sains Malaysia, Penang, Malaysia, formatted
-%% according to the Guide to the Preparation, Submission and Examination
-%% of Theses, published by IPS USM. It can be obtained at
-%% http://liantze.penguinattack.org/latextypesetting.html#usmthesis (I will
-%% likely withdraw it at any time if there continues to be frequent,
-%% inconsistent and undocumented changes, until a formal, updated guidleines
-%% is published.)
-%%
-%% IMPORTANT MESSAGE (Dec 2016)
-%% Due to the recent numerous changes requested by IPS, USM to different
-%% candidates -- often conflicting even within the same week -- without much
-%% consistency nor in black in white, I have found it increasingly difficult
-%% to maintain a coherent version. I have therefore decided to provide some
-%% options that seem to be favored by IPS on different occasions; but will no
-%% longer update the template until an updated formatting guidelines with clear
-%% instructions and concrete samples is published.
-%%
-%% THERE WILL BE NO FURTHER UPDATES UNTIL IPS, USM PUBLISHES AN OFFICIAL
-%% UPDATED FORMATTING GUIDELINES WITH CONCRETE, CLEAR INSTRUCTIONS.
-%%
-%% Individual requests for help to modify this version for your needs will be
-%% handled on a case by case basis, depending on my mood, perhaps for a fee.
-%% Requests for help to modify past versions will NOT be entertained.
-%% Please read http://tex.my/how-to-ask-for-latex-related-help-effectively/.
-%%
-%% (Yes I'm that tired and frustrated. I know everyone just want to graduate,
-%% but I am by now genuinely put off by the tone of some requests with rude
-%% attitudes, unclear descriptions, flip-flopping conditions, etc for something
-%% that was originally for my own use.)
-%%
-%% Submit a git pull request on https://github.com/liantze/usmthesis
-%% if you wish to contribute your changes. No timeframe is set for approvals.
-%% I cannot check through any edited usmthesis.cls of any version without
-%% CVS.
-%%
-%% Usmthesis _was_ fun; but it has ceased to be so for me.
-%%
-%% Oh and if you'd like to adapt this template (the .cls and/or the .tex) for
-%% your institution, that's perfectly fine, but at least keep the license
-%% (LPPL 1.3) and the original author (me) won't you? It's just normal decency.
-%% THANK you. :-)
-%%
-%%
-%  BRIEF CHANGELOG
-%  ===============
-% v1.7  Dec 08 2016
-%     - FINAL UPDATE BEFORE v2.0, which will only be possible when IPS
-%       officially publishes the updated formatted guidelines and samples, and
-%       if there is any real interest for a new version at all.
-%     - Added a bunch of new document class options that you can mix and match
-%       to appease IPS' various combinations of requirements. PLEASE READ THE
-%       COMMENTS AT THE TOP AND THROUGHOUT usmthesis.tex.
-%
-% v1.67 Oct 05 2016
-%     - Refactored code in .cls.
-%     - Chapter heading spacing should be more consistent now.
-%     - Multiline figure and table captions should now have page numbers aligned
-%       with first line. (Not fixed for chapter/section headings; IMHO these
-%       should be kept short.)
-%     - Added some examples to usmthesis.tex to handle cases when IPS requests
-%       for no page numbers/no ToC entries for appendices etc.
-%
-% v1.66 Apr 13 2016
-%     - First pages of appendix chapters don't have footers now.
-%
-% v1.65 Mar 22 2016
-%     - Titles on cover/title pages now double-spaced
-%
-% v1.64 Mar 20 2016
-%     - First paragraphs after each sectional heading is
-%       now indented
-%
-% v1.63 Mar 3 2016
-%     - Moved List of Publications to after Appendices
-%     - References heading has 5cm top margin
-%
-% v1.62 Feb 17 2016
-%     - Turn off page numbering for appendices in the ToC
-%     - Appendix chapters are un-bold in the ToC now
-%
-% v1.61 Sep 22 2015
-%     - Abstract titles are now 12pt (irrespective of the font being used)
-%     - Default bibliography style is now APA
-%       (with \RequirePackage[natbibapa]{apacite})
-%
-% v1.6 Aug 21 2015
-%     - (Based on feedback from Puan Nurul Hasyda of IPS)
-%     - Chapters are now in bold in the TOC.
-%     - Eliminated vertical spaces at the top and bottom of cover and
-%       title page.
-%     - Apparently if using Times, must be in 12pt. So no more 11pt,
-%       12pt choices. But sans serif (Arial) is allowed again, but must
-%       be at 11pt.
-%     - Instead, the "times" option loads mathptmx 12pt as body font,
-%       and "arial" option loads "helvet" 11pt as body font.
-%
-% v1.5 Apr 16 2015
-%     - Thesis titles in abstracts are now double-spaced if >1 lines, and
-%       are smaller than the "Abstract"/"Abstrak" keywords.
-%
-% v1.4 Apr 14 2015
-%     - Now works with updated acronym package.
-%     - Finally using bahasam babel option (and removed the french language,
-%       couldn't remember why I didn't remove it after some personal tests).
-%     - Page numbers in content lists are now unbold (requested by IPS).
-%
-% v1.3 May 12 2012
-%     - Refined spacing in bibliography list and after chapter heading
-%     - Fixed font size in cover (from 17pt to 18pt)
-%     - User can now specify preferred document body font size (11pt or 12pt)
-%        as a class option. The default is 11pt.
-%     - Changed font sizes of section, subsection headings to \normalsize.
-%
-%  v1.2 Nov 15 2007
-%     - New thesis format in force as of 16 November 2007!
-%     - There is now no times, helvet or cm options. Body font is now
-%       Times Roman for serif type, Helvetica for sans serif type, and
-%       TX Typewriter for typewriter font.
-%     - Bottom page margin increased to 4.0cm.
-%     - Page number now placed 1.0cm from botom edge of paper.
-%     - All text on title page are now in bold.
-%     - Title of bibliography/references is now "REFERENCES".
-%     - Introduced new "plate" float and "List of Plates".
-%     - List of Publications is now moved to *after* appendices.
-%     - Re-formatting of the table of contents:
-%       * all text are unformatted (chapter headings are neither in bold nor
-%         using larger font size)
-%       * dotted leader between titles and page number
-%       * larger separation between (sub)section numbers and titles to resemble
-%         the sample in the guidelines more closely
-%     - Fixed bug in definition of \chapter to honour short title in
-%       \chapter[short title]{full title}
-%
-%  v1.1 May 20 2007
-%     - re-definition of \chapter, therefore eliminating the need for \mychapter.
-%       Various GUI LaTeX editors will now recognise the chapter divisions.
-%     - added \RequirePackage[T1]{fontenc}.
-%     - updated quickstart.tex: removed note about \mychapter.
-%
-%  v1.0 June 1 2006
-%     - usmthesis is now provided as a document class (usmthesis.cls).
-%     - introduced class options for:
-%         * body font scheme (on suggestion by Dr Dhanesh)
-%         * style of URLs
-%         * whether figures are framed by default (on feedback from Anusha and
-%           Seng Soon).
-%     - updated usmthesis.tex to describe how to do common tasks in LaTeX
-%     - new quickstart.tex to describe how to use usmthesis.cls and accompanying
-%       template files.
-%
-%  v0.1 Nov 29 2005
-%     - first stab at usmthesis as a package (usmthesis.sty).
-%
-%
-% Available class options
-% (e.g., \documentclass[urlsf,boxfig,txtt]{usmthesis}
-%
-%             *** choose only one from each category ***
-%
-% urlrm, urlsf, urltt
-%   determines the font family to be used for typesetting URLs -- You may
-%   want to select one that shows up URLs clearly with respect to the main
-%   thesis font that you chose.  urlrm will cause URLs to be typeset with a
-%   serif font (CM Roman or Times Roman); urlsf with a sans serif
-%   font (CM Serif or Helvetica); and urltt with a typewriter font (CM
-%   Typewriter or Courier).
-%   The default is urltt.
-%
-% boxfig, noboxfig
-%   determines if figures will have a visible bounding box.
-%
-%   The default is noboxfig.
-%
-% ....and a bunch of other options that I don't feel like documenting :-/
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{usmthesis}[2016/12/07 version 1.7]
 
 \RequirePackage{silence}
 \WarningFilter{float}{Can't redefine}
 
-% switches for URL font
 \newif\if@urltt
 \newif\if@urlsf
 \newif\if@urlrm
 
-% switch for border around figures
 \newif\if@boxfig
 
-% Added August 2015: times or arial as thesisfont
 \newif\if@timesthesis
 \DeclareOption{times}{\@timesthesistrue}
 \DeclareOption{arial}{\@timesthesisfalse}
@@ -245,7 +63,7 @@
 %% (Helvetica is loaded in lieu of Arial, which is
 %% commercial.)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\RequirePackage{mathptmx}
+% \RequirePackage{mathptmx}
 \RequirePackage{helvet}
 \RequirePackage{textcase}
 \renewcommand{\ttdefault}{lmtt}
@@ -279,8 +97,12 @@
 % here. Babel now supports bahasam.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{vietnam}
-\RequirePackage[english]{babel}
+\usepackage{setspace}
+\RequirePackage[bahasam,english]{babel}
 
+% \RequirePackage{scrlfile}                       % Prevent svg (<2.0) package 
+% \PreventPackageFromLoading{subfig}              % from loading subfig.
+                                                % See also iss. #13
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Default spacing is double.  In your actual content,
@@ -595,8 +417,6 @@
 
 
 %% Creates the first two cover pages
-
-%% Creates the first two cover pages
 \newcommand\makecover{%
 \begin{titlepage}
 \begin{tikzpicture}[remember picture, overlay]
@@ -607,29 +427,29 @@
 %\vspace*{10mm}
 %
 
-UNIVERSITY OF SCIENCE\\
-FACULTY OF INFORMATION TECHNOLOGY\\
-ADVANCED PROGRAM IN COMPUTER SCIENCE\\
-\vspace*{50pt}
+UNIVERSITY OF SCIENCE \\
+% FACULTY OF INFORMATION TECHNOLOGY \\
+ADVANCED PROGRAM IN COMPUTER SCIENCE \\
+\vspace*{70pt}
 
 \fontsize{14pt}{16pt}\selectfont
-\MakeTextUppercase{Huỳnh Lâm Hải Đăng - Hồ Thị Ngọc Phượng}
+\MakeTextUppercase{HUỲNH LÂM HẢI ĐĂNG - HỒ THỊ NGỌC PHƯỢNG}
 
-\vspace*{60pt}
+\vspace*{80pt}
 \begingroup
 \if@singlespacetitle\singlespacing\fi
 \fontsize{20pt}{28pt}\selectfont%
 \MakeTextUppercase{\@title}\par
 \endgroup
 %
-\vspace*{60pt}
+\vspace*{70pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
 \MakeTextUppercase{\@degreetype}\par
 \endgroup
 
-\vspace*{150pt}
+\vspace*{160pt}
 HO CHI MINH CITY, \@submityear\par
 %
 %\vspace*{20mm}
@@ -645,19 +465,20 @@ HO CHI MINH CITY, \@submityear\par
 \fontfamily{phv}\selectfont
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
-UNIVERSITY OF SCIENCE\\
-FACULTY OF INFORMATION TECHNOLOGY\\
-ADVANCED PROGRAM IN COMPUTER SCIENCE\\
+UNIVERSITY OF SCIENCE \\
+% FACULTY OF INFORMATION TECHNOLOGY \\
+ADVANCED PROGRAM IN COMPUTER SCIENCE \\
 \endgroup
 
-\vspace*{50pt}
+\vspace*{70pt}
 
+\renewcommand{\baselinestretch}{1} 
 \begingroup
 \fontsize{14pt}{26pt}\selectfont
-\@author\par
+{\setstretch{1}\@author} \par
 \endgroup
 
-\vspace*{40pt}
+\vspace*{80pt}
 
 \begingroup
 \if@singlespacetitle\singlespacing\fi
@@ -665,22 +486,23 @@ ADVANCED PROGRAM IN COMPUTER SCIENCE\\
 \MakeTextUppercase{\@title}\par
 \endgroup
 
-\vspace*{50pt}
+\vspace*{70pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
 \MakeTextUppercase{\@degreetype}\par
 \endgroup
 
-\vspace*{50pt}
+\vspace*{100pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont%
-THESIS ADVISORS:\\
-\MakeTextUppercase{\@lecturer}\par
+\begin{spacing}{1.5}
+THESIS ADVISOR\\ \@lecturer \par
+\end{spacing}
 \endgroup
 
-\vspace*{100pt}
+\vspace*{50pt}
 
 \begingroup
 \fontsize{14pt}{16pt}\selectfont
@@ -834,7 +656,7 @@ HO CHI MINH CITY, 2023
 }{}{}
 
 
-\newcommand{\appendixtocname}{Appendix}
+\newcommand{\appendixtocname}{Appendices}
 \pretocmd{\appendix}{%
   \clearpage
   \addtocontents{toc}{\protect\cftpagenumbersoff{part}}

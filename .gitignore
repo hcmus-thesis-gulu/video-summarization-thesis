@@ -302,15 +302,15 @@ TSWLatexianTemp*
 
 
 
-# # User-specific stuff:
-# *.*
-# !.gitignore
-# !*.tex
-# !*.bib
-# !*.png
-# !*.jpg
-# !*.bib
-# !*.cls
-# !*.pdf
-# # ignore final file
-# usmthesis.pdf
+# User-specific stuff:
+*.*
+!.gitignore
+!*.tex
+!*.bib
+!*.png
+!*.jpg
+!*.bib
+!*.cls
+!*.pdf
+# ignore final file
+usmthesis.pdf

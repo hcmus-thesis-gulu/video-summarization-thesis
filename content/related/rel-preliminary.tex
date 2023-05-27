@@ -1,4 +1,24 @@
 \section{Preliminary}
 \label{section:rel-preliminary}
 
-This is content.
+\subsection{Problem Statement}
+\label{subsec:rel-statement}
+
+Video summarization aims to generate a concise overview of video content by selecting the most informative and significant parts. The resulting summary can take the form of either a set of representative video frames, known as a video storyboard, or a compilation of video fragments stitched together in chronological order, referred to as a video skim. Video skims have an advantage over static frame sets as they can include audio and motion elements, allowing for a more natural storytelling experience and potentially conveying more information. Moreover, watching a video skim is often more engaging and captivating for viewers compared to a slideshow of frames \cite{Li2001Overview}. On the other hand, storyboards offer greater flexibility in terms of data organization for browsing and navigation purposes, as they are not bound by timing or synchronization constraints \cite{Calic2007Comic,Wang2007VideoCollage}.
+
+Our problem statement aligns closely with the concept of video storyboards, which involve selecting a subset of representative video frames to summarize the content. By focusing on these key frames, we aim to capture the essence and important aspects of the video in a condensed form. This approach allows for efficient browsing and navigation through the video data while providing a comprehensive overview of its content.
+
+\subsection{Problem Formulation}
+\label{subsec:rel-formulation}
+Given an input video $\textbf{I}=\{I^{(t)}\}_{t=1}^T$ where each frame $I^{(t)} \in \mathbb{R} ^{C \times H \times W}$, the goal of video summarization using the storyboard approach is to generate a concise summary $\textbf{S}$ that consists of a subset of representative frames. The summary $\textbf{S}$ is denoted as $\{I^{(t_i)}\}^k_{i=1}$, where $k$ is typically much smaller than $T$ and $t_1 < t_2 < \dots < t_k$.
+
+\subsection{Datasets}
+\label{subsec:rel-datasets}
+
+As referenced in Section \ref{section:intro-motivation}, the prominent datasets for the video summarization task are SumMe \cite{SumMe} and TVSum \cite{TVSum}. In this study, we will thoroughly analyze and employ these datasets as benchmarks for evaluating the performance of video summarization algorithms.
+
+\input{content/related/rel-summe.tex}
+\input{content/related/rel-tvsum.tex}
+
+\subsection{Evaluation Metrics}
+\label{subsec:rel-evaluation}

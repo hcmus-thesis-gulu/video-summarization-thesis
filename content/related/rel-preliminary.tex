@@ -29,15 +29,54 @@ Some less commonly used datasets for video summarization include CoSum \cite{Chu
 
 CoSum focuses on video co-summarization. It consists of 50 videos obtained from Youtube using 10 query terms related to the content of SumMe dataset. Each video has an approximate duration of 4 minutes, from which sets of key-fragments are selected by 3 different annotators.
 
+MED-Summaries consists of 160 videos from TRECVID 2011 MED dataset. The dataset is divided into a validation set with 60 videos from 15 event categories and a test set with 100 videos from 10 event categories. The majority of videos has durations range from 1 to 5 minutes, with each being annotated with a set of importance scores, averaged over 1 to 4 annotators.
 
-The MED-summaries
-dataset contains 160 annotated videos from the TRECVID
-2011 MED dataset. 60 videos form the validation set (from
-15 event categories) and the remaining 100 videos form the
-test set (from 10 event categories), with most of them being
-1 to 5 minutes long. The annotations come as one set of
-importance scores, averaged over 1 to 4 annotators
+The VTW dataset consists of 18100 open domain videos, out of which 2000 videos are annotated at the sub-shot level with highlight scores. These user-generated videos are untrimmed and typically contain a highlight event. On average, the videos in the dataset have a duration of 1.5 minutes.
 
+The LoL dataset consists of 218 long videos, ranging from 30 to 50 minutes in duration. These videos showcase game matches from the North American League of Legends Championship Series (NALCS). The annotations for this dataset are derived from a YouTube channel that features community-generated highlights, with the highlight videos typically having a duration of 5 to 7 minutes. As a result, there is one set of key-fragments available for each video in the dataset.
+
+The FPVSum dataset focuses on first-person video summarization and comprises 98 videos, totaling over 7 hours of content. These videos are sourced from 14 categories of GoPro viewer-friendly videos. For each category, approximately 35\% of the video sequences have been annotated with ground-truth scores by at least 10 users, while the remaining sequences are considered unlabeled examples. This dataset provides valuable resources for evaluating and developing first-person video summarization algorithms.
+
+Apostolidis \etal~\cite{Apostolidis2021Video} have compiled a comprehensive summarization table, showcasing the main characteristics of the aforementioned datasets. For reference, \hyperref[table:dataset-characteristics]{Table \ref{table:dataset-characteristics}} presents an overview of the dataset attributes, such as video count, annotation types, video duration, and user involvement.
+\begin{table}
+  \caption{Datasets for video summarization and their characteristics.}
+  \scriptsize
+  \begin{tabular}{|M{0.09\textwidth}|M{0.07\textwidth}|M{0.09\textwidth}|M{0.4\textwidth}|M{0.16\textwidth}|M{0.11\textwidth}|}
+    \hline
+    \bfseries Dataset & \bfseries no. videos & \bfseries duration (min) & \bfseries content & \bfseries type of annotations & \bfseries annotators per video \\ 
+    [0.5ex] 
+    \hline\hline
+    SumMe \cite{Gygli2014SumMe} & 25 & 1 - 6 & holidays, events, sports & multiple sets of key-fragments & 15 - 18 \\
+    \hline
+    TVSum \cite{Song2015TVSum} & 50 & 2 - 10 & news, how-to's, user-generated, documentaries (10 categories - 5 video each) & multiple fragment level scores & 20 \\
+    \hline
+    OVP \cite{De2011VSUMM} & 50 & 1 - 4 & documentary, educational, ephemeral, historical, lecture & multiple sets of key frames & 5 \\
+    \hline
+    YouTube \cite{De2011VSUMM} & 50 & 1 - 10 & cartoons, sports, tv-shows, commercial. home videos & multiple sets of key frames & 5 \\
+    \hline
+    CoSum \cite{Chu2015CoSum} & 51 & ~ 4 & holidays, events, sports (10 categories) & multiple sets of key fragments & 3 \\
+    \hline
+    MED \cite{Potapov2014MEDSummaries} & 160 & 1 - 5 & 15 categories of various genres & one set of importance score & 1 - 4 \\
+    \hline
+    VTW \cite{Zeng2016TitleWild} & 2000 & 1.5 (avg) & user-generated videos that contain a highlight event & sub-shot level highlight scores & - \\
+    \hline
+    LoL \cite{Fu2017VideoLoL} & 218 & 30 - 50 & matches from a League of Legends tournament & one set of key fragments & 1 \\
+    \hline
+    FPVSum \cite{Ho2018FVPSum} & 98 & 4.3 (avg) & first-person videos (14 categories) & multiple frame level scores & 10 \\
+    \hline
+  \end{tabular}
+  \label{table:dataset-characteristics}
+\end{table}
+
+% FPVSum [110] 98 4.3 (avg) first-person videos
+% (14 categories) multiple frame-level scores 10
+% \begin{center}
+%   \begin{tabular}{|c|c|c|c|c|c|}
+%   \label{table:dataset-characteristics}
+%     \hline
+%     Dataset & \# of videos & duration (min) & content & type of annotations & \# of annotators per video \\
+%   \end{tabular}
+% \end{center}
 % In this study, we will thoroughly analyze and employ these datasets as benchmarks for evaluating the performance of video summarization algorithms.
 
 \subsection{Evaluation Metrics}

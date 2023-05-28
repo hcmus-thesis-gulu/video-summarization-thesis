@@ -14,6 +14,12 @@ then
     exit 1
 fi
 
+# Remove the old pdf file
+if [ -f $1.pdf ]
+then
+    rm $1.pdf
+fi
+
 # Compile the file with flow pdflatex -> bibtex -> pdflatex
 pdflatex -interaction=nonstopmode $1.tex
 bibtex $1

@@ -10,12 +10,12 @@ Our problem statement aligns closely with the concept of video storyboards, whic
 
 \subsection{Problem Formulation}
 \label{subsec:rel-formulation}
-Given an input video $\textbf{I}=\{I^{(t)}\}_{t=1}^T$ where each frame $I^{(t)} \in \mathbb{R} ^{C \times H \times W}$, the goal of video summarization using the storyboard approach is to generate a concise summary $\textbf{S}$ that consists of a subset of representative frames. The summary $\textbf{S}$ is denoted as $\{I^{(t_i)}\}^k_{i=1}$, where $k$ is typically much smaller than $T$ and $t_1 < t_2 < \dots < t_k$.
+Given an input video $\textbf{I}=\{I^{(t)}\}_{t=1}^T$ where each frame $I^{(t)} \in \mathbb{R} ^{C \times H \times W}$, the goal of video summarization using the storyboard approach is to generate a concise summary $\textbf{G}$ that consists of a subset of representative frames. The generated summary $\textbf{G}$ is denoted as $\{I^{(t_i)}\}^k_{i=1}$, where $k$ is typically much smaller than $T$ and $t_1 < t_2 < \dots < t_k$.
 
 \subsection{Datasets}
 \label{subsec:rel-datasets}
 
-As referenced in Section \ref{section:intro-motivation}, two datasets that prevail in the video summarization bibliography are SumMe \cite{Gygli2014SumMe} and TVSum \cite{Song2015TVSum}. 
+As referenced in Section \ref{section:intro-motivation}, two datasets that prevail in the video summarization bibliography are SumMe \cite{SumMe} and TVSum \cite{TVSum}. 
 
 SumMe dataset comprises 25 videos, ranging from 1 to 6 minutes in duration, encompassing diverse content and captured from both first-person and third-person perspectives. Each video has been annotated by 15 to 18 users, resulting in multiple fragment-level user summaries. These summaries typically span 5\% to 15\% of the original video duration. 
 
@@ -46,9 +46,9 @@ Apostolidis \etal~\cite{Apostolidis2021Video} have compiled a comprehensive summ
     \bfseries Dataset & \bfseries no. videos & \bfseries duration (min) & \bfseries content & \bfseries type of annotations & \bfseries annotators per video \\ 
     [0.5ex] 
     \hline\hline
-    SumMe \cite{Gygli2014SumMe} & 25 & 1 - 6 & holidays, events, sports & multiple sets of key-fragments & 15 - 18 \\
+    SumMe \cite{SumMe} & 25 & 1 - 6 & holidays, events, sports & multiple sets of key-fragments & 15 - 18 \\
     \hline
-    TVSum \cite{Song2015TVSum} & 50 & 2 - 10 & news, how-to's, user-generated, documentaries (10 categories - 5 video each) & multiple fragment level scores & 20 \\
+    TVSum \cite{TVSum} & 50 & 2 - 10 & news, how-to's, user-generated, documentaries (10 categories - 5 video each) & multiple fragment level scores & 20 \\
     \hline
     OVP \cite{De2011VSUMM} & 50 & 1 - 4 & documentary, educational, ephemeral, historical, lecture & multiple sets of key frames & 5 \\
     \hline
@@ -72,3 +72,41 @@ Apostolidis \etal~\cite{Apostolidis2021Video} have compiled a comprehensive summ
 
 \subsection{Evaluation Metrics}
 \label{subsec:rel-evaluation}
+
+	The evaluation of video summarization algorithms is a challenging task, as it is difficult to quantify the quality of a summary. In this section, we will present the multiple difficulties that prior works have encountered when evaluating video summarization algorithms. We will also give an overview the most commonly used evaluation metrics for video summarization, as well as the metrics used in this study. These information will be useful for the reader to understand the current research progress on the evaluation process of video summarization algorithms. They are provided in the subsections of \ref{subsec:rel-evaluation-difficulties} and \ref{subsec:rel-evaluation-metrics}, respectively.
+	
+	\subsubsection{Difficulties in Evaluation}
+	\label{subsubsec:rel-evaluation-difficulties}
+		Some of the most prominent problems that arise when evaluating video summarization algorithms include the lack of high-quality ground-truth summaries, the subjectivity of human perception, and the lack of a consensus on the definition of a good summary. In the following paragraphs, we will discuss some. Details about these problems are presented in \cite{Apostolidis2021Video}.
+
+			\paragraph[short]{Lack of high-quality ground-truth summaries}
+				The lack of high-quality ground-truth summaries is one of the main problems when evaluating video summarization algorithms. Ground-truth summaries are summaries that are created by humans and are used as a reference for the evaluation of automatic video summarization algorithms. However, the construction of such annotated summaries is a time-consuming and expensive process as it requires the involvement of human annotators which are inconsistent in nature. This inconsistency of human annotators means that the same evaluator may produce different summaries for the same video at different times, leading to unsure and possibly conflicting ground-truth summaries among the annotations from the same evaluator, leave alone the annotations from different evaluators as provided in the datasets from previous subsection \ref{subsec:rel-datasets}.
+
+				Besides the inconsistency issue, the ground-truth summaries are also limited in quantity. This is because the creation of ground-truth summaries is a time-consuming and expensive process while only small number of videos were annotated with limited number of annotators in the previously published datasets.
+			
+			\paragraph[short]{Subjectivity of human perception}
+				Different people may have different opinions on what constitutes a good summary for a given video. This subjectivity makes it difficult to evaluate the performance of an automatic video summarizer as it can lead to different ground-truth summaries for the same video which in turn creates distinct and possibly conflicting scores or opinions on the quality of a summary. Furthermore, the perceptive subjectivity also possesses problem in comparing the performance of different automatic video summarization algorithms due to several corner cases such as when an algorithm produces a summary that is judged as good by some of the human evaluators but not by others, while the other algorithm produces a summary that is judged vice versa. This problem is also known as the \textit{inter-annotator agreement} problem that is described by both \cite{measure-annotator-agreement} and \cite{inter-annotator-agreement} in details.
+			
+			\paragraph[short]{Lack of consensus on the definition of a good summary}
+				Different people may have different opinions on what constitutes a good summary. This lack of consensus can make it difficult to evaluate the performance of automatic video summarization algorithms.
+
+		Other than the problems that are alrady described in the previous research, there are also other problems that are not yet addressed in the evaluation process of video summarization algorithms. A notable problem that our team found during the research for prior evaluation is the possibility of several semantically different summaries that can well represent the same video. This problem is only \textit{partially} addressed in the SumMe dataset with the use of specialized aggregation method on multiple ground-truth summaries but most of this problem still persists as the number of available ground-truths is still limited.
+
+	\subsubsection{Prior Evaluation Methods}
+	\label{subsubsec:rel-evaluation-prior}
+		There are several methods that have been used in literature to evaluate video summarization algorithms while addressing some of the problems mentioned in the subsection above. The two most employed methods include the approach of user studies which is the most naive and original one, and the use of ground-truth summaries as references for computation of objective metrics. Details about these methods are presented in \cite{Apostolidis2021Video} and we provide a brief overview of them in the following paragraphs.
+
+		\paragraph[short]{User studies}
+			The most naive and original method for evaluating video summarization algorithms is to conduct user studies. In this method, the performance of an algorithm is evaluated by asking human evaluators to watch the video summaries produced by the algorithm and then rate the quality of the summaries. The quality of a summary is usually rated by the evaluators based on their subjective opinions. This method is the most naive and original one because it is the most straightforward way to evaluate the performance of an algorithm. Furthermore, it is also the most expensive and time-consuming method as it requires the involvement of human evaluators. Besides such disadvantages, this method is also the least accurate one as the human evaluators are inherently inconsistent in nature. This inconsistency of human evaluators means that the same evaluator may produce distinct scores for the same summary at different times, making such evaluation process not possible to be reproduced in the future. Therefore, the current literature has moved away from this method for easier reproducibility as well as consistency and low-cost evaluation of their methods. More details can be found in the survey by Apostolidis et al. \cite{Apostolidis2021Video}.
+
+		\paragraph[short]{Objective metrics}
+			Another method that has been increasingly used in literature to evaluate automatically generated summaries is the use of artificially annotated ground-truths as references for computation of objective metrics. In this method, the performance of an algorithm is evaluated by comparing the summary produced by the algorithm with the pre-defined ground-truth summaries created by human evalutors. The comparison is usually done by computing the similarity between the summary produced by the algorithm and the ground-truth summaries. The similarity between the summary produced by the algorithm and the ground-truth summaries is usually computed with objective metrics such as accuracy and error rates which were proposed by \cite{ejaz2012adaptive} and adopted by \cite{almeida2012vison,cahuina2013new,jacob2017video}, or the more well-known precision, recall, and F-measure that were published by \cite{mahmoud2013unsupervised} and used by \cite{gong2014diverse,guan2014top,mei2015video,demir2015video}. This method is less expensive and time-consuming than the user studies method as it does not require the involvement of human evaluators.
+
+			As all of the previously mentioned objective metrics are computed based on a fundamental assumption that all summaries, either automatically generated or artificially annotated, comprise of keyframes selected from the video content, their resulting performance measures are not soft enough to finely rank the performane of different methods summarizing the same video. This is because the keyframes selected from the video content by human evaluators are singular in its nature, meaning that an automatically generated keyframe falling aside an annotated one would be viewed as false positive without concerning the distance between the two. Hence, the use of such metrics would \textit{not} result in a difference of measured performance for approaches with different discrepancies to the user-generated keyframes. In other words, the algorithm that produces a summary with keyframes that are close to the annotated ones but not exactly the same is assigned a similar score with another algorithm producing a summary with keyframes that are far from the annotated ones.
+			
+			To address such problem, a notable variation of this method was introduced in the SumMe dataset \cite{SumMe} and adopted by TVSum dataset \cite{TVSum}, which 
+			
+			However, the methods of using objective metrics to evaluate the performance of video summaries is also less accurate than the user studies as it is based on the assumption that the ground-truth summaries are accurate representations of the videos. This assumption is not always true as the ground-truth summaries are usually created by human evaluators which are inconsistent in nature. This inconsistency of human evaluators means that the same evaluator may produce different summaries for the same video at different times, leading to unsure and possibly conflicting ground-truth summaries among the annotations from the same evaluator, leave alone the annotations from different evaluators as provided in the datasets from previous subsection \ref{subsec:rel-datasets}.
+
+		
+		To the best of our knowledge, there is currently no prior work that has fully addressed this problem and hence, solving

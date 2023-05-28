@@ -312,5 +312,6 @@ TSWLatexianTemp*
 !*.bib
 !*.cls
 !*.pdf
+!*.sh
 # ignore final file
 usmthesis.pdf

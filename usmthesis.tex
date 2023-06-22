@@ -79,17 +79,17 @@ bookmarksdepth=section,breaklinks=true]{hyperref}
 \makecover
 \frontmatter
 
-\include{content/advisor-comment}
-\include{content/reviewer-comment}
-\include{content/acknowledgements}
-\include{content/syllabus}
+\input{content/advisor-comment.tex}
+\input{content/reviewer-comment.tex}
+\input{content/acknowledgements.tex}
+\input{content/syllabus.tex}
 
 \tableofcontents \clearpage
 \listoftables \clearpage
 \listoffigures \clearpage
 \setlength\intextsep{24pt}
 
-\include{content/abstract}
+\input{content/abstract.tex}
 
 \mainmatter
 \import{content}{main-chaps.tex}
